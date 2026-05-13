@@ -53,6 +53,7 @@ Engineering: API contract, auth token, CRUD, dashboard, safety gate, dry-run, py
 
 - Portfolio: [https://Wendy-James.github.io/](https://Wendy-James.github.io/)
 - GitHub: [https://github.com/Wendy-James](https://github.com/Wendy-James)
+- Contact: [GitHub Issues](https://github.com/Wendy-James/Wendy-James/issues) or the contact info in my resume
 
 ---
 
