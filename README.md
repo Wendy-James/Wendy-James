@@ -111,7 +111,7 @@ A Vue 2 admin dashboard practice project covering login flow, role selection, to
 - TypeScript, React, Node.js / SQL backend basics.
 - Algorithms, computer networks, operating systems, databases, and system design communication.
 - Cleaner public repos with API contracts, architecture notes, tests, `.env.example`, and security documentation.
-- More precise English summaries for school applications and technical interviews.
+- More precise English summaries for applications and technical communication.
 
 ## Links
 
