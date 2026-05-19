@@ -96,6 +96,7 @@ A Vue 2 admin dashboard practice project covering login flow, role selection, to
 ## Project Evidence
 
 - [project-briefs](https://github.com/Wendy-James/project-briefs): public case studies for AI applications, document intelligence, backend workflow automation, and algorithm research.
+- [engineering security review](https://github.com/Wendy-James/project-briefs/blob/main/docs/engineering-security-review.md): public-safe audit notes covering credentials, repo structure, `.env.example`, and next cleanup actions.
 - [ai-zhishi-zhushou](https://github.com/Wendy-James/ai-zhishi-zhushou): AI document Q&A frontend prototype with explicit backend API contracts.
 - [mas-chuangzuozhe-houtai](https://github.com/Wendy-James/mas-chuangzuozhe-houtai): Vue admin dashboard practice with routing, request utilities, CRUD pages, forms, tables, upload and chart modules.
 - [open-source-reading-notes](https://github.com/Wendy-James/open-source-reading-notes): engineering reading notes for frameworks, UI libraries, API design, and type systems.
