@@ -28,7 +28,9 @@ I build practical AI and software workflows that turn messy inputs such as job d
 An AI-powered job application workflow that parses job descriptions, matches candidate profiles, generates tailored LaTeX resume drafts, and supports interview preparation.
 
 **Focus areas:** JD parsing, candidate-profile structuring, resume bullet generation, interview question generation, human-in-the-loop review.
+
 **Architecture direction:** FastAPI, PostgreSQL, Redis, Celery, Docker, LLM API, LaTeX.
+
 **Status:** project experience and system design; public implementation is being organized.
 
 ### [Document Structure Extraction / Document Intelligence](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/adaptive-document-structuring-model)
@@ -36,7 +38,9 @@ An AI-powered job application workflow that parses job descriptions, matches can
 A research-oriented document intelligence project focused on structured information extraction and multi-scenario document understanding.
 
 **Focus areas:** field extraction, schema design, scenario-specific document requirements, validation rules, and explainable structured outputs.
+
 **Role:** provincial-level project lead.
+
 **Status:** academic research experience; public materials avoid private datasets and unsupported performance claims.
 
 ### [5G Network Slicing for Intelligent Transportation](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/5g-network-slicing-its-optimization)
@@ -44,6 +48,7 @@ A research-oriented document intelligence project focused on structured informat
 A research project analyzing optimization strategies for 5G network slicing in intelligent transportation systems.
 
 **Focus areas:** low-latency communication, reliability requirements, bandwidth allocation, resource isolation, QoS constraints, and performance optimization strategy.
+
 **Status:** academic / algorithm research brief.
 
 ### [AI Document Q&A Assistant Prototype](https://github.com/Wendy-James/ai-zhishi-zhushou)
@@ -51,7 +56,9 @@ A research project analyzing optimization strategies for 5G network slicing in i
 A frontend prototype for document question answering, with PDF / PPTX / DOCX upload, chat-style interaction, and explicit backend API expectations.
 
 **Stack:** HTML, CSS, JavaScript, Fetch API.
+
 **API contract:** `POST /upload` for document upload and `POST /ask` for question answering.
+
 **What it shows:** document upload UI, chat-style product thinking, and clear frontend/backend boundaries.
 
 ### [Python Workflow Automation Workbench](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-b2b-outreach-workbench)
@@ -59,7 +66,9 @@ A frontend prototype for document question answering, with PDF / PPTX / DOCX upl
 A local workflow automation project brief covering dry-run mode, safety gates, reply triage, anonymized RFQ routing, privacy checks, and automated safety tests.
 
 **Stack:** Python, local web console, workflow scripts, pytest.
+
 **Engineering signal:** module boundaries, mock fixtures, credential non-persistence, human review, and testable risk controls.
+
 **Disclosure:** public summary only; no private customer data, credentials, or business records are exposed.
 
 ### [Vue Admin Dashboard Practice](https://github.com/Wendy-James/mas-chuangzuozhe-houtai)
@@ -67,15 +76,21 @@ A local workflow automation project brief covering dry-run mode, safety gates, r
 A Vue 2 admin dashboard practice project covering login flow, role selection, token request interception, routing, CRUD pages, forms, tables, upload components, and charts.
 
 **Stack:** Vue 2, Element UI, Vue Router, Axios, ECharts.
+
 **What it shows:** frontend engineering structure, admin workflow pages, and management-system UI patterns.
 
 ## Tech Stack
 
 **Languages:** Python, JavaScript, SQL, Java, C++
+
 **Backend:** FastAPI, Flask, REST API design, workflow automation, background task concepts
+
 **AI / ML:** LLM APIs, prompt workflow design, document QA, structured extraction, scikit-learn, PyTorch basics
+
 **Data / Storage:** PostgreSQL, MySQL, Redis, CSV / file-based pipelines
+
 **Tools:** Docker, Git, Linux, pytest, Celery, LaTeX, GitHub Pages
+
 **Frontend:** HTML, CSS, JavaScript, Vue 2, Element UI, Axios
 
 ## Project Evidence
