@@ -77,6 +77,7 @@ Machine Learning
 
 - GitHub: [https://github.com/Wendy-James](https://github.com/Wendy-James)
 - Portfolio: [https://Wendy-James.github.io/](https://Wendy-James.github.io/)
+- GitHub主页建设总报告: [docs/PORTFOLIO_BUILD_REPORT.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/PORTFOLIO_BUILD_REPORT.md)
 - GitHub主页建设报告: [docs/ALGORITHM_PROFILE_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/ALGORITHM_PROFILE_PLAN.md)
 - 简历项目描述: [docs/RESUME_PROJECT_DESCRIPTIONS.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.md)
 - Email: 1563887189@qq.com
