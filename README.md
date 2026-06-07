@@ -1,27 +1,61 @@
 # Hi, I'm Wendy / 詹文婷
 
-I'm an Information and Computing Science undergraduate with a mathematics background, focusing on **AI Engineering**, **Backend Development**, **LLM Applications**, and **Document Intelligence**.
+I'm an Information and Computing Science undergraduate with a mathematics background, focusing on **AI Algorithms**, **LLM/RAG/Agent Systems**, **Recommendation Systems**, **Machine Learning**, and **Deep Learning Engineering**.
 
-I build practical AI and software workflows that turn messy inputs such as job descriptions, resumes, research documents, and business processes into structured, reviewable, and testable systems.
+I build algorithm-oriented projects that connect model understanding with engineering implementation: retrieval pipelines, agent workflows, recommendation/ranking models, document intelligence, and reproducible experiment reports.
 
-**Target roles:** AI Engineer Intern · Backend Engineer Intern · LLM Application Engineer · Software Engineer Intern · Data / Algorithm related intern
+**Target roles:** AI Algorithm Intern · LLM Algorithm Intern · Machine Learning Intern · Recommendation Algorithm Intern · AIGC / Agent Intern
 
 <p>
   <a href="https://Wendy-James.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-GitHub%20Pages-0969da?style=flat-square"></a>
   <a href="https://github.com/Wendy-James/project-briefs"><img alt="Project Briefs" src="https://img.shields.io/badge/Project%20Briefs-AI%20%7C%20Backend%20%7C%20Research-0f766e?style=flat-square"></a>
-  <img alt="Python" src="https://img.shields.io/badge/Python-Workflow%20Automation-3776ab?style=flat-square&logo=python&logoColor=white">
-  <img alt="LLM Apps" src="https://img.shields.io/badge/LLM-Applications-7c3aed?style=flat-square">
-  <img alt="Document Intelligence" src="https://img.shields.io/badge/Document-Intelligence-b45309?style=flat-square">
+  <img alt="Python" src="https://img.shields.io/badge/Python-Algorithms-3776ab?style=flat-square&logo=python&logoColor=white">
+  <img alt="RAG" src="https://img.shields.io/badge/RAG-Hybrid%20Retrieval-7c3aed?style=flat-square">
+  <img alt="Recommendation" src="https://img.shields.io/badge/Recommendation-CTR%20%7C%20Ranking-b45309?style=flat-square">
+  <img alt="Agent" src="https://img.shields.io/badge/Agent-LangGraph%20%7C%20MCP-0f766e?style=flat-square">
 </p>
 
 ## Current Focus
 
-- Building LLM application workflows with clear input parsing, output constraints, and human review.
-- Designing backend-oriented systems around API contracts, data models, workflow queues, tests, and deployment boundaries.
-- Exploring document intelligence: structured extraction, document understanding, schema design, validation, and multi-scenario adaptation.
-- Strengthening engineering fundamentals in algorithms, databases, networking, operating systems, and system design.
+- Building production-style RAG systems with hybrid retrieval, reranking, query rewrite, FAISS indexing, and retrieval evaluation.
+- Designing agent workflows with LangGraph-style state machines, multi-agent collaboration, memory, MCP tools, and failure recovery.
+- Reproducing recommendation and CTR models such as LightGBM, XGBoost, DeepFM, xDeepFM, and two-tower retrieval.
+- Strengthening deep learning fundamentals through Transformer fine-tuning, model-source reading, attention analysis, and experiment tracking.
+- Turning each project into interview-ready evidence: architecture docs, algorithm notes, training/inference flows, tests, and ablation results.
 
 ## Featured Projects
+
+### [Algorithm GitHub Profile Roadmap](https://github.com/Wendy-James/Wendy-James/blob/main/docs/ALGORITHM_PROFILE_PLAN.md)
+
+A structured plan for building an algorithm-engineer-style GitHub profile for AI algorithm, LLM, machine learning, recommendation, AIGC, and Agent intern applications.
+
+**Includes:** 20 high-quality reference repositories, 7 selected portfolio projects, learning roadmap, reproduction template, innovation points, and STAR-style resume descriptions.
+
+**Next repositories:** Hybrid RAG Lab, LangGraph Multi-Agent Lab, CTR Ranking Lab, RecSys Pipeline Lab, Transformer Model Lab.
+
+### Hybrid RAG Lab
+
+A planned production-style retrieval-augmented generation project based on LlamaIndex, Haystack, and FAISS.
+
+**Focus areas:** document parsing, chunking, BM25+dense hybrid retrieval, vector indexing, reranking, query rewrite, multi-route recall, Recall@K / MRR / nDCG evaluation.
+
+**Innovation direction:** compare sparse retrieval, dense retrieval, hybrid fusion, reranker strategies, and query rewrite quality under the same evaluation set.
+
+### LangGraph Multi-Agent Lab
+
+A planned multi-agent research assistant with graph-based orchestration, long-term memory, tool registry, verifier agent, and checkpoint recovery.
+
+**Focus areas:** planner, researcher, tool executor, verifier, summarizer, MCP-style tools, state persistence, retry control, cost and failure tracing.
+
+**Innovation direction:** improve reliability with critic/verifier loops, task decomposition, tool-call validation, and recoverable agent state.
+
+### CTR Ranking Lab
+
+A planned CTR and ranking project comparing tree-based and deep recommendation models.
+
+**Focus areas:** LightGBM, XGBoost, DeepFM, xDeepFM, feature crossing, categorical embeddings, negative sampling, AUC, LogLoss, calibration, nDCG.
+
+**Innovation direction:** model comparison, feature-engineering ablations, online-style ranking simulator, and segment-level error analysis.
 
 ### [AI Job Application Agent](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-career-interview-system)
 
@@ -83,9 +117,15 @@ A Vue 2 admin dashboard practice project covering login flow, role selection, to
 
 **Languages:** Python, JavaScript, SQL, Java, C++
 
+**Algorithm / ML:** RAG, BM25, FAISS, reranking, embeddings, LightGBM, XGBoost, DeepFM, Transformer, BERT, time-series forecasting, anomaly detection
+
+**LLM / Agent:** LangGraph, LlamaIndex, Haystack, MCP, tool calling, memory, evaluation, prompt workflow design
+
+**Deep Learning:** PyTorch, scikit-learn, model fine-tuning, attention analysis, experiment tracking, metrics and ablation studies
+
 **Backend:** FastAPI, Flask, REST API design, workflow automation, background task concepts
 
-**AI / ML:** LLM APIs, prompt workflow design, document QA, structured extraction, scikit-learn, PyTorch basics
+**AI Applications:** document QA, structured extraction, human-in-the-loop review, schema validation
 
 **Data / Storage:** PostgreSQL, MySQL, Redis, CSV / file-based pipelines
 
@@ -109,10 +149,11 @@ A Vue 2 admin dashboard practice project covering login flow, role selection, to
 
 ## Currently Improving
 
-- TypeScript, React, Node.js / SQL backend basics.
-- Algorithms, computer networks, operating systems, databases, and system design communication.
-- Cleaner public repos with API contracts, architecture notes, tests, `.env.example`, and security documentation.
-- More precise English summaries for applications and technical communication.
+- Hybrid RAG retrieval quality: sparse+dense fusion, reranking, query rewrite, and evaluation.
+- Agent reliability: state graphs, tool validation, verifier loops, memory, and checkpoint recovery.
+- Recommendation algorithms: CTR prediction, ranking metrics, feature engineering, and model comparison.
+- Cleaner public repos with architecture notes, algorithm docs, tests, configs, `.env.example`, and experiment logs.
+- More precise English and Chinese technical summaries for applications, resumes, and interviews.
 
 ## Links
 
