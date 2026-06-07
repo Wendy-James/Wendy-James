@@ -77,7 +77,31 @@ Action: Implemented impression data generation, feature encoding, feature crossi
 
 Result: Delivered a runnable recommendation project that shows machine-learning engineering, metric understanding, and a clear path toward LightGBM, XGBoost, CatBoost, DeepFM, and xDeepFM experiments.
 
-## 4. Document Intelligence
+## 4. Transformer Model Lab
+
+Repository: https://github.com/Wendy-James/transformer-model-lab
+
+### One-Line Version
+
+- Built a lightweight Transformer model lab implementing tokenization, embeddings, Q/K/V self-attention, classifier training, threshold calibration, and attention trace export.
+
+### Three-Line Version
+
+- Implemented a source-level Transformer forward path covering vocabulary encoding, token embeddings, Q/K/V projections, `[CLS]` self-attention pooling, sigmoid classifier scoring, and metric evaluation.
+- Added a runnable experiment pipeline with Accuracy/F1 metrics, threshold calibration, attention trace export, bilingual README, architecture docs, algorithm notes, and interview explanations.
+- Designed the project as a model-understanding bridge toward PyTorch Transformer training, BERT fine-tuning, LoRA adaptation, and attention visualization.
+
+### STAR Interview Version
+
+Situation: Many Transformer projects only call pretrained APIs, making it difficult to explain model internals during interviews.
+
+Task: Build a small runnable project that exposes how token IDs become embeddings, attention weights, pooled representations, and classification outputs.
+
+Action: Implemented tokenization, embedding lookup, Q/K/V projection, scaled dot-product attention, classifier training, threshold calibration, metrics, and attention trace export.
+
+Result: Delivered a deep-learning project that demonstrates source-level model understanding and provides a clear roadmap toward BERT fine-tuning and parameter-efficient adaptation.
+
+## 5. Document Intelligence
 
 Repository: https://github.com/Wendy-James/project-briefs/tree/main/case-studies/adaptive-document-structuring-model
 
@@ -101,7 +125,7 @@ Action: Defined schemas, extraction fields, validation rules, scenario requireme
 
 Result: Built a project brief that demonstrates document understanding, structured extraction design, and AI workflow decomposition.
 
-## 5. AI Job Application Agent
+## 6. AI Job Application Agent
 
 Repository: https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-career-interview-system
 

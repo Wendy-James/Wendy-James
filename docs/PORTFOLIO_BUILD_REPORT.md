@@ -28,7 +28,7 @@ Current repository count checked with GitHub CLI on 2026-06-07:
 | Total repositories | 13 |
 | Public repositories | 11 |
 | Private repositories | 2 |
-| Core algorithm portfolio repositories | 3 |
+| Core algorithm portfolio repositories | 4 |
 
 This is within the recommended range of 10-20 repositories and below the upper limit of 30.
 
@@ -39,6 +39,7 @@ Standardized core repository names:
 | `llm-rag-system` | LLM / RAG / retrieval | https://github.com/Wendy-James/llm-rag-system |
 | `multi-agent-assistant` | Agent / multi-agent workflow | https://github.com/Wendy-James/multi-agent-assistant |
 | `recommendation-system` | CTR / recommendation ranking | https://github.com/Wendy-James/recommendation-system |
+| `transformer-model-lab` | Deep Learning / Transformer | https://github.com/Wendy-James/transformer-model-lab |
 
 ## 3. Homepage Structure
 
@@ -127,13 +128,37 @@ Main innovation points:
 - ranking metric evaluation
 - reproducible CSV/JSON experiment outputs
 
+### 4.4 Transformer Model Lab
+
+Repository: https://github.com/Wendy-James/transformer-model-lab
+
+Current evidence:
+
+- runnable Transformer internals experiment
+- tokenization and vocabulary encoding
+- token embeddings
+- Q/K/V projection
+- self-attention over `[CLS]`
+- classifier training
+- Accuracy/F1 metrics
+- threshold calibration
+- attention trace export
+- bilingual README
+- architecture, algorithm, experiment, and interview docs
+
+Main innovation points:
+
+- source-level Transformer forward path
+- attention trace export
+- threshold calibration for classification
+- extension path toward PyTorch Transformer, BERT fine-tuning, LoRA, and attention visualization
+
 ## 5. Remaining Roadmap Toward 5-8 Core Projects
 
-Three core projects are currently online. To reach the final target of 5-8 high-quality algorithm repositories, the next recommended projects are:
+Four core projects are currently online. To reach the final target of 5-8 high-quality algorithm repositories, the next recommended projects are:
 
 | Priority | Repository Name | Direction | Why It Matters |
 |---|---|---|---|
-| P1 | `transformer-model-lab` | Deep Learning / NLP | Shows source-level Transformer understanding, fine-tuning, attention analysis |
 | P1 | `time-series-forecast` | Data mining / forecasting | Adds time-series forecasting and anomaly detection breadth |
 | P2 | `yolo-object-detection` | Computer vision | Covers object detection, training/inference pipeline, model evaluation |
 | P2 | `recsys-pipeline-lab` | Recommendation system | Extends CTR into recall-ranking-reranking pipeline |
@@ -187,13 +212,12 @@ GitHub portfolio focused on LLM/RAG, Agent workflows, CTR ranking, recommendatio
 | Bilingual READMEs | Passed for three core repositories and profile |
 | HR-friendly profile wording | Passed current scan |
 | Repository naming consistency | Passed for three core repositories |
-| 5-8 high-quality projects | In progress: 3 online, 2-5 recommended next |
+| 5-8 high-quality projects | In progress: 4 online, 1-4 recommended next |
 
 ## 8. Next Actions
 
 1. Pin `llm-rag-system`, `multi-agent-assistant`, and `recommendation-system` on the GitHub profile.
-2. Build `transformer-model-lab` next to strengthen deep learning and model-source understanding.
-3. Build `time-series-forecast` or `yolo-object-detection` to broaden algorithm coverage.
+2. Build `time-series-forecast` next to broaden data mining and anomaly detection coverage.
+3. Build `yolo-object-detection` or `recsys-pipeline-lab` to expand computer vision or recommendation-system coverage.
 4. Keep commits steady and meaningful, with one clear improvement per commit.
 5. Use the GitHub profile link directly in the resume after the first three repositories are pinned.
-
