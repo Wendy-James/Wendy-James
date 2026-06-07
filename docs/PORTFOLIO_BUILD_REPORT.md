@@ -211,6 +211,10 @@ Chinese resume project descriptions:
 
 https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md
 
+Resume GitHub snippet:
+
+https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_GITHUB_SNIPPET.md
+
 The document includes:
 
 - one-line resume version

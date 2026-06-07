@@ -90,5 +90,6 @@ Each core project is expected to include:
 - Algorithm profile roadmap: [docs/ALGORITHM_PROFILE_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/ALGORITHM_PROFILE_PLAN.md)
 - Resume project descriptions: [docs/RESUME_PROJECT_DESCRIPTIONS.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.md)
 - Chinese resume project descriptions: [docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md)
+- Resume GitHub snippet: [docs/RESUME_GITHUB_SNIPPET.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_GITHUB_SNIPPET.md)
 - Contribution plan: [docs/CONTRIBUTION_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/CONTRIBUTION_PLAN.md)
 - Chinese README: [README.zh-CN.md](https://github.com/Wendy-James/Wendy-James/blob/main/README.zh-CN.md)

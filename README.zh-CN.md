@@ -84,5 +84,6 @@ Machine Learning
 - GitHub主页建设报告: [docs/ALGORITHM_PROFILE_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/ALGORITHM_PROFILE_PLAN.md)
 - 简历项目描述: [docs/RESUME_PROJECT_DESCRIPTIONS.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.md)
 - 中文简历项目描述: [docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md)
+- 简历GitHub短版: [docs/RESUME_GITHUB_SNIPPET.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_GITHUB_SNIPPET.md)
 - 持续提交计划: [docs/CONTRIBUTION_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/CONTRIBUTION_PLAN.md)
 - Email: 1563887189@qq.com
