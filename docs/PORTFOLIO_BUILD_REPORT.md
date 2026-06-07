@@ -255,7 +255,7 @@ Latest verification commands:
    `llm-rag-system`, `multi-agent-assistant`, `recommendation-system`, `transformer-model-lab`, `time-series-forecast`.
 2. Build `yolo-object-detection` or `recsys-pipeline-lab` to expand computer vision or recommendation-system coverage.
 3. Continue improving existing projects with stronger datasets, model baselines, and visual reports.
-4. Keep commits steady and meaningful, with one clear improvement per commit.
+4. Follow the four-week contribution plan in `docs/CONTRIBUTION_PLAN.md` to keep commits steady and meaningful.
 5. Use the GitHub profile link directly in the resume after the core repositories are pinned.
 
 Manual pin steps:
