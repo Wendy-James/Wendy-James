@@ -28,7 +28,7 @@ I build algorithm-oriented projects with runnable code, architecture notes, expe
 
 ## Selected Projects
 
-Only core algorithm projects are highlighted here so recruiters and interviewers can quickly review the strongest evidence.
+This section highlights five core algorithm repositories plus two supporting AI engineering case studies so recruiters and interviewers can quickly review the strongest evidence.
 
 | Project | Tech Tags | Summary | Core Evidence | Links |
 |---|---|---|---|---|

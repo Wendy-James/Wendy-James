@@ -25,8 +25,8 @@ Current repository count checked with GitHub CLI on 2026-06-07:
 
 | Scope | Count |
 |---|---:|
-| Total repositories | 13 |
-| Public repositories | 11 |
+| Total repositories | 15 |
+| Public repositories | 13 |
 | Private repositories | 2 |
 | Core algorithm portfolio repositories | 5 |
 
@@ -52,7 +52,7 @@ The current GitHub Profile README follows the requested recruiting structure:
 |---|---|---|
 | First screen identity | Completed | Name, degree, target role, concise positioning |
 | Core technology stack | Completed | Machine Learning, Deep Learning, LLM, RAG, Agent, Recommendation System, Python, PyTorch, TensorFlow, SQL, Docker, Git |
-| Selected projects | Completed | 5 selected projects shown instead of all repositories |
+| Selected projects | Completed | 7 selected projects shown instead of all repositories: 5 core algorithm repositories plus 2 supporting AI engineering case studies |
 | Technical roadmap | Completed | Machine Learning -> Deep Learning -> LLM -> RAG -> Agent -> Multi-Agent Systems |
 | GitHub statistics | Completed | GitHub Stats, Top Languages, Contribution Graph |
 | Bilingual README | Completed | `README.md` and `README.zh-CN.md` |
@@ -198,7 +198,7 @@ llm-rag-system
   -> transformer-model-lab
   -> time-series-forecast
   -> yolo-object-detection
-  -> yolo-object-detection
+  -> diffusion-model-lab
 ```
 
 ## 6. Resume Materials
