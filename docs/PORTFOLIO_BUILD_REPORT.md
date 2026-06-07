@@ -42,6 +42,8 @@ Standardized core repository names:
 | `transformer-model-lab` | Deep Learning / Transformer | https://github.com/Wendy-James/transformer-model-lab |
 | `time-series-forecast` | Data mining / forecasting | https://github.com/Wendy-James/time-series-forecast |
 
+Core repository metadata has been optimized with professional descriptions and topics such as `machine-learning`, `rag`, `llm`, `multi-agent`, `recommendation-system`, `transformer`, `time-series`, and `anomaly-detection`.
+
 ## 3. Homepage Structure
 
 The current GitHub Profile README follows the requested recruiting structure:
@@ -240,8 +242,16 @@ GitHub portfolio focused on LLM/RAG, Agent workflows, CTR ranking, recommendatio
 
 ## 8. Next Actions
 
-1. Pin `llm-rag-system`, `multi-agent-assistant`, and `recommendation-system` on the GitHub profile.
+1. Pin the five core repositories on the GitHub profile through the GitHub web UI:
+   `llm-rag-system`, `multi-agent-assistant`, `recommendation-system`, `transformer-model-lab`, `time-series-forecast`.
 2. Build `yolo-object-detection` or `recsys-pipeline-lab` to expand computer vision or recommendation-system coverage.
 3. Continue improving existing projects with stronger datasets, model baselines, and visual reports.
 4. Keep commits steady and meaningful, with one clear improvement per commit.
-5. Use the GitHub profile link directly in the resume after the first three repositories are pinned.
+5. Use the GitHub profile link directly in the resume after the core repositories are pinned.
+
+Manual pin steps:
+
+1. Open https://github.com/Wendy-James.
+2. Click `Customize your pins`.
+3. Select the five core repositories listed above.
+4. Save pins and confirm they appear above the contribution graph.
