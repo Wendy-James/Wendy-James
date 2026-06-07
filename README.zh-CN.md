@@ -1,43 +1,81 @@
-# Wendy-James
+# Wendy Zhan / 詹文婷
 
-算法实习生方向候选人，关注大模型应用、RAG、Agent、推荐系统、机器学习和深度学习工程化。
+**Master of Computer Science**  
+**AI / Machine Learning / LLM Engineer**
 
-## 技术方向
+Mathematics Background + AI Engineering + Large Language Models
 
-- 大模型算法：RAG、Agent、多智能体协作、LangGraph、LlamaIndex、MCP 工具调用
-- 推荐算法：召回、排序、CTR 预估、DeepFM、LightGBM、XGBoost、特征工程
-- 深度学习：Transformer、BERT、ViT、扩散模型、模型微调与评估
-- 数据挖掘：聚类、异常检测、时间序列预测、用户画像
-- 工程能力：Python、PyTorch、FastAPI、Docker、实验管理、技术文档
+我正在系统建设面向算法实习岗位的 GitHub 项目组合，重点方向包括大模型应用、RAG、Agent、推荐算法、机器学习和深度学习工程化。每个核心项目都尽量包含可运行代码、架构说明、实验指标和面试讲解材料。
 
-## 重点项目规划
+**目标岗位：** AI算法实习生 · 机器学习算法实习生 · 大模型算法实习生 · 推荐算法实习生 · Agent / AIGC 实习生
 
-| 项目 | 方向 | 亮点 |
-|---|---|---|
-| [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab) | RAG / 检索增强生成 | BM25、稠密检索、Query Rewrite、RRF融合、Reranker、Recall/MRR/nDCG评估 |
-| LangGraph Multi-Agent Lab | Agent / 工具调用 | 多Agent协作、长期记忆、MCP工具、状态图、失败恢复 |
-| [CTR Ranking Lab](https://github.com/Wendy-James/ctr-ranking-lab) | 推荐 / CTR | 特征工程、特征交叉、Logistic Regression、GBDT风格基线、AUC/LogLoss/nDCG@5 |
-| RecSys Pipeline Lab | 推荐系统 | 召回、排序、重排、冷启动、覆盖率与多样性 |
-| Transformer Model Lab | 深度学习 | BERT/Transformer微调、注意力可视化、LoRA、误差分析 |
-| Diffusion or Time-Series Lab | AIGC / 数据挖掘 | 扩散模型推理分析，或时间序列预测与异常检测 |
+## 核心技术栈
 
-## 当前目标
+| 方向 | 技术 |
+|---|---|
+| Machine Learning | CTR预估、排序模型、特征工程、AUC、LogLoss、nDCG |
+| Deep Learning | Transformer、BERT、ViT、模型微调、注意力分析 |
+| LLM | RAG、检索评估、Reranker、Prompt工作流 |
+| Agent | 状态图、多Agent协作、工具调用、记忆、验证器 |
+| Recommendation System | 召回、排序、重排、冷启动、离线评估 |
+| Engineering | Python、PyTorch、TensorFlow、SQL、Docker、Git、FastAPI、pytest |
 
-我正在系统建设一个算法工程师风格的 GitHub 主页。每个项目都会包含：
+## 精选项目
 
-- 可运行代码
-- 架构图与算法流程图
-- 训练与推理流程
-- 实验记录与性能指标
-- 二次创新点
-- 面试讲解文档
+这里只展示核心算法项目，方便 HR 和面试官快速判断技术方向和项目质量。
 
-## 已上线项目
+| 项目 | 技术标签 | 项目简介 | 核心成果 | 链接 |
+|---|---|---|---|---|
+| LLM RAG System | RAG、BM25、稠密检索、RRF、Reranker | 面向检索质量优化的 RAG 检索系统 | Recall@3/MRR@3/nDCG@3 指标、中英文 README、架构与算法文档 | [GitHub](https://github.com/Wendy-James/hybrid-rag-lab) · Demo: CLI |
+| Multi-Agent Assistant | Agent、状态图、工具调用、记忆、Verifier | 本地多Agent研究工作流，包含 Planner、Researcher、Writer、Verifier、Summarizer | 执行轨迹、工具调用日志、Verifier 指标、面试讲解文档 | [GitHub](https://github.com/Wendy-James/multi-agent-research-lab) · Demo: CLI |
+| CTR Ranking Lab | CTR、推荐系统、特征交叉、排序指标 | CTR预估与排序实验项目，对比 Logistic Regression 和 GBDT 风格基线 | AUC、LogLoss、nDCG@5、可复现实验结果 | [GitHub](https://github.com/Wendy-James/ctr-ranking-lab) · Demo: CLI |
+| Document Intelligence | 信息抽取、Schema设计、验证规则 | 面向多场景结构化文档理解的研究项目 | 项目说明、Schema设计、抽取流程说明 | [GitHub](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/adaptive-document-structuring-model) · Demo: docs |
+| AI Job Application Agent | LLM工作流、简历生成、FastAPI设计 | JD解析、候选人匹配、简历草稿生成和面试准备工作流 | 系统设计、流程拆解、后端架构规划 | [GitHub](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-career-interview-system) · Demo: docs |
 
-- [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab)：已完成第一版可运行工程，包含 BM25 稀疏召回、稠密检索基线、Query Rewrite、RRF 多路融合、Reranker、Recall/MRR/nDCG 指标和中英文文档。
-- [CTR Ranking Lab](https://github.com/Wendy-James/ctr-ranking-lab)：已完成第一版可运行工程，包含 CTR 数据生成、特征工程、特征交叉、Logistic Regression、GBDT 风格模型对比、AUC/LogLoss/nDCG@5 指标和中英文文档。
+## 技术路线图
 
-## 联系方式
+```text
+Machine Learning
+  -> Deep Learning
+  -> Large Language Models
+  -> Retrieval-Augmented Generation
+  -> Agent Systems
+  -> Multi-Agent Systems
+```
 
-- GitHub: https://github.com/Wendy-James
+当前建设原则：
+
+- 做可评估的算法项目，而不是只调用 API 的包装项目。
+- 每个核心仓库都保留清晰运行命令。
+- 文档覆盖架构、算法原理、数据流、指标和面试问题。
+- 二次创新重点包括 Reranker、Query Rewrite、特征交叉、Verifier Loop、模型对比实验。
+
+## GitHub 统计
+
+<p>
+  <img height="165" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Wendy-James&show_icons=true&hide_border=true&theme=default">
+  <img height="165" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wendy-James&layout=compact&hide_border=true&theme=default">
+</p>
+
+<p>
+  <img alt="Contribution Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Wendy-James&theme=minimal&hide_border=true">
+</p>
+
+## 项目标准
+
+每个核心项目都尽量包含：
+
+- 项目背景与价值
+- 技术架构图
+- 运行方式
+- 算法原理
+- 实验结果
+- 项目亮点与优化方案
+- 面试常见问题与 STAR 讲解
+
+## 链接
+
+- GitHub: [https://github.com/Wendy-James](https://github.com/Wendy-James)
+- Portfolio: [https://Wendy-James.github.io/](https://Wendy-James.github.io/)
+- GitHub主页建设报告: [docs/ALGORITHM_PROFILE_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/ALGORITHM_PROFILE_PLAN.md)
 - Email: 1563887189@qq.com

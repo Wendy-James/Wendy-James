@@ -153,11 +153,19 @@ Algorithm Engineer Intern Candidate | LLM/RAG/Agent | Recommendation System | De
 Pinned repositories:
 
 1. `hybrid-rag-lab`
-2. `langgraph-multi-agent-lab`
+2. `multi-agent-research-lab`
 3. `ctr-ranking-lab`
 4. `recsys-pipeline-lab`
 5. `transformer-model-lab`
 6. `diffusion-or-timeseries-lab`
+
+Current launched repositories:
+
+| Repository | Direction | Status |
+|---|---|---|
+| https://github.com/Wendy-James/hybrid-rag-lab | RAG / retrieval | Runnable baseline, metrics, bilingual README, architecture and interview docs |
+| https://github.com/Wendy-James/multi-agent-research-lab | Agent / multi-agent workflow | Runnable state graph, tool-call traces, verifier metrics, bilingual README and docs |
+| https://github.com/Wendy-James/ctr-ranking-lab | Recommendation / CTR ranking | Runnable CTR experiment, model comparison, AUC/LogLoss/nDCG metrics, bilingual README and docs |
 
 Repository naming should be clear and professional, with names that reflect the algorithm topic and engineering scope.
 
@@ -309,7 +317,7 @@ Interview explanation:
 
 1. Create the GitHub profile repository: `Wendy-James/Wendy-James`.
 2. Add bilingual profile README from `profile-readme/`.
-3. Create `hybrid-rag-lab` as the first deep project.
-4. Finish its deployable baseline before starting the next project.
+3. Continue improving the first three launched repositories with larger datasets and stronger baselines.
+4. Create `recsys-pipeline-lab` as the next recommendation-system project.
 5. For every project, commit docs, tests, configs, and experiment logs with clear commit history.
 6. Pin the first 3 completed repositories on GitHub before adding the link to the resume.
