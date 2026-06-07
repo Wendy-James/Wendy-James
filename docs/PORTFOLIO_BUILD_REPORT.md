@@ -74,7 +74,7 @@ Current evidence:
 - reranking
 - Recall@3, MRR@3, nDCG@3 metrics
 - bilingual README
-- architecture, algorithm, experiment, and interview docs
+- architecture, algorithm, experiment, source-reading, and interview docs
 
 Main innovation points:
 
@@ -98,7 +98,7 @@ Current evidence:
 - tool-call traces
 - verifier metrics
 - bilingual README
-- architecture, algorithm, experiment, and interview docs
+- architecture, algorithm, experiment, source-reading, and interview docs
 
 Main innovation points:
 
@@ -122,7 +122,7 @@ Current evidence:
 - lightweight GBDT-style baseline
 - AUC, LogLoss, nDCG@5 metrics
 - bilingual README
-- architecture, algorithm, experiment, and interview docs
+- architecture, algorithm, experiment, source-reading, and interview docs
 
 Main innovation points:
 
@@ -147,7 +147,7 @@ Current evidence:
 - threshold calibration
 - attention trace export
 - bilingual README
-- architecture, algorithm, experiment, and interview docs
+- architecture, algorithm, experiment, source-reading, and interview docs
 
 Main innovation points:
 
@@ -170,7 +170,7 @@ Current evidence:
 - MAE, RMSE, MAPE, Anomaly F1 metrics
 - CSV/JSON experiment outputs
 - bilingual README
-- architecture, algorithm, experiment, and interview docs
+- architecture, algorithm, experiment, source-reading, and interview docs
 
 Main innovation points:
 
@@ -249,6 +249,7 @@ https://github.com/Wendy-James/Wendy-James/blob/main/docs/COMPLETION_AUDIT.md
 | Interview-ready docs | Passed for five core repositories |
 | Bilingual READMEs | Passed for five core repositories and profile |
 | Required README sections | Passed for five core repositories: intro, architecture, run commands, algorithm notes, experiment results, highlights, optimization plan, interview notes |
+| Source-reading notes | Passed for five core repositories: each includes `docs/source-reading.md` |
 | HR-friendly profile wording | Passed current scan |
 | Repository naming consistency | Passed for five core repositories |
 | 5-8 high-quality projects | Passed minimum target: 5 online, 0-3 recommended next |

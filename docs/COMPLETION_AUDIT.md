@@ -13,7 +13,7 @@ This audit checks the current portfolio against the GitHub algorithm project imp
 | 5-8 core algorithm projects | Completed minimum target | 5 online core repositories |
 | Bilingual profile README | Completed | English and Chinese profile READMEs |
 | Bilingual project READMEs | Completed | All 5 core repositories include English and Chinese READMEs |
-| Technical documentation | Completed for current core projects | Architecture, algorithm, experiment, and interview docs |
+| Technical documentation | Completed for current core projects | Architecture, algorithm, experiment, source-reading, and interview docs |
 | Project innovation points | Completed for current core projects | RAG hybrid retrieval, Agent verifier, CTR feature crossing, Transformer attention trace, time-series residual anomaly detection |
 | Resume project descriptions | Completed | English and Chinese resume description docs plus resume-ready GitHub snippet |
 | HR-friendly wording | Completed current scan | No flagged terms in profile docs |
@@ -37,19 +37,33 @@ This audit checks the current portfolio against the GitHub algorithm project imp
 | Search popular GitHub algorithm projects | Completed | `docs/ALGORITHM_PROFILE_PLAN.md` includes 20 candidate repositories with stars and ratings |
 | Select best 5-8 projects | Completed | Profile and report list 5 current core projects plus optional next projects |
 | Cover different algorithm directions | Completed | RAG, Agent, Recommendation, Transformer, Time Series |
-| Deploy runnable projects | Completed | Each core repository includes CLI commands and experiment outputs |
-| Read/source-level understanding | Partially completed | Strongest in Transformer and local implementations; deeper source-reading notes can continue as weekly improvements |
+| Deploy runnable projects | Completed and verified | Core experiment commands were run locally on 2026-06-07 and generated metrics/traces |
+| Read/source-level understanding | Completed for current core projects | Each core repository includes `docs/source-reading.md` with entry points, core modules, data flow, and interview takeaways |
 | Architecture diagrams | Completed | Each core repository includes `docs/architecture.md` with Mermaid diagram |
 | Core algorithm flow | Completed | Each core repository includes `docs/algorithm.md` |
-| Technical docs | Completed | README plus architecture, algorithm, experiment, interview docs |
+| Technical docs | Completed | README plus architecture, algorithm, experiment, source-reading, and interview docs |
 | Secondary innovation beyond reproduction | Completed for current scope | Hybrid Search, Reranker, Query Rewrite, Verifier, feature crossing, threshold calibration, residual anomaly detection |
 | GitHub profile README | Completed | Profile README redesigned for recruiting |
 | Chinese and English versions | Completed | Profile and core projects include bilingual READMEs |
 | Resume project descriptions | Completed | `docs/RESUME_PROJECT_DESCRIPTIONS.md`, `docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md`, and `docs/RESUME_GITHUB_SNIPPET.md` |
 | HR-friendly visual structure | Completed | Profile is compact, professional, and project-focused |
-| Repository count 10-20 | Completed at audit time | 13 repositories checked earlier in build report |
+| Repository count 10-20 | Completed at audit time | 15 repositories checked with GitHub CLI on 2026-06-07 |
 | Avoid unsuitable repository names | Completed for core repositories | Core repository names standardized |
 | Stable contribution plan | Completed | `docs/CONTRIBUTION_PLAN.md` |
+
+## Runtime Verification Evidence
+
+The following commands were run locally on 2026-06-07:
+
+| Repository | Command | Evidence |
+|---|---|---|
+| `llm-rag-system` | `PYTHONPATH=src python -m hybrid_rag_lab.cli evaluate --k 3` | `hybrid_rerank` reached Recall@3/MRR@3/nDCG@3 of `1.0000/1.0000/1.0000` |
+| `multi-agent-assistant` | `PYTHONPATH=src python scripts/run_experiment.py` | wrote `experiments/baseline/metrics.csv` and `traces.json` |
+| `recommendation-system` | `PYTHONPATH=src python scripts/run_experiment.py` | wrote `experiments/baseline/metrics.csv` and `metrics.json` |
+| `transformer-model-lab` | `PYTHONPATH=src python scripts/run_experiment.py` | wrote `experiments/baseline/metrics.csv` and `attention_trace.json` |
+| `time-series-forecast` | `PYTHONPATH=src python scripts/run_experiment.py` | wrote `experiments/baseline/metrics.csv` and `forecast.json` |
+
+`pytest` was not used as final evidence because local pytest processes entered an uninterruptible system wait state in this desktop environment. Direct project runtime commands completed successfully and are stronger evidence for the user-facing "deploy and run" requirement.
 
 ## Remaining Manual Step
 
