@@ -101,7 +101,31 @@ Action: Implemented tokenization, embedding lookup, Q/K/V projection, scaled dot
 
 Result: Delivered a deep-learning project that demonstrates source-level model understanding and provides a clear roadmap toward BERT fine-tuning and parameter-efficient adaptation.
 
-## 5. Document Intelligence
+## 5. Time Series Forecast
+
+Repository: https://github.com/Wendy-James/time-series-forecast
+
+### One-Line Version
+
+- Built a time-series forecasting and anomaly detection lab with moving-average and trend-seasonal baselines, residual thresholding, MAE/RMSE/MAPE, and anomaly F1 evaluation.
+
+### Three-Line Version
+
+- Created a reproducible time-series pipeline with synthetic trend-seasonality data, train/validation split, moving-average forecasting, trend-seasonal forecasting, and residual analysis.
+- Implemented residual-threshold anomaly detection and evaluated forecasting/anomaly performance with MAE, RMSE, MAPE, and F1 metrics exported as CSV/JSON.
+- Documented architecture, algorithm principles, experiment results, optimization plan, and interview notes for data mining and forecasting roles.
+
+### STAR Interview Version
+
+Situation: Time-series monitoring requires both accurate forecasting and reliable anomaly detection.
+
+Task: Build a reproducible data-mining project that compares forecasting baselines and converts forecast residuals into anomaly alerts.
+
+Action: Implemented synthetic data generation, moving-average forecasting, trend-seasonal forecasting, residual thresholding, MAE/RMSE/MAPE/F1 metrics, CLI execution, and experiment reports.
+
+Result: Delivered a runnable forecasting project that demonstrates trend/seasonality modeling, anomaly detection, metric interpretation, and a path toward rolling backtests and Transformer forecasting.
+
+## 6. Document Intelligence
 
 Repository: https://github.com/Wendy-James/project-briefs/tree/main/case-studies/adaptive-document-structuring-model
 
@@ -125,7 +149,7 @@ Action: Defined schemas, extraction fields, validation rules, scenario requireme
 
 Result: Built a project brief that demonstrates document understanding, structured extraction design, and AI workflow decomposition.
 
-## 6. AI Job Application Agent
+## 7. AI Job Application Agent
 
 Repository: https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-career-interview-system
 

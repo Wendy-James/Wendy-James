@@ -28,7 +28,7 @@ Current repository count checked with GitHub CLI on 2026-06-07:
 | Total repositories | 13 |
 | Public repositories | 11 |
 | Private repositories | 2 |
-| Core algorithm portfolio repositories | 4 |
+| Core algorithm portfolio repositories | 5 |
 
 This is within the recommended range of 10-20 repositories and below the upper limit of 30.
 
@@ -40,6 +40,7 @@ Standardized core repository names:
 | `multi-agent-assistant` | Agent / multi-agent workflow | https://github.com/Wendy-James/multi-agent-assistant |
 | `recommendation-system` | CTR / recommendation ranking | https://github.com/Wendy-James/recommendation-system |
 | `transformer-model-lab` | Deep Learning / Transformer | https://github.com/Wendy-James/transformer-model-lab |
+| `time-series-forecast` | Data mining / forecasting | https://github.com/Wendy-James/time-series-forecast |
 
 ## 3. Homepage Structure
 
@@ -153,13 +154,35 @@ Main innovation points:
 - threshold calibration for classification
 - extension path toward PyTorch Transformer, BERT fine-tuning, LoRA, and attention visualization
 
+### 4.5 Time Series Forecast
+
+Repository: https://github.com/Wendy-James/time-series-forecast
+
+Current evidence:
+
+- runnable forecasting and anomaly detection experiment
+- synthetic trend + seasonality data
+- moving-average baseline
+- trend-seasonal baseline
+- residual threshold anomaly detection
+- MAE, RMSE, MAPE, Anomaly F1 metrics
+- CSV/JSON experiment outputs
+- bilingual README
+- architecture, algorithm, experiment, and interview docs
+
+Main innovation points:
+
+- trend and seasonality modeling
+- residual-based anomaly detection
+- metric comparison across forecasting and anomaly detection
+- extension path toward rolling backtests and Transformer forecasting
+
 ## 5. Remaining Roadmap Toward 5-8 Core Projects
 
-Four core projects are currently online. To reach the final target of 5-8 high-quality algorithm repositories, the next recommended projects are:
+Five core projects are currently online. The minimum target of 5 high-quality algorithm repositories has been reached. To continue strengthening the portfolio, the next recommended projects are:
 
 | Priority | Repository Name | Direction | Why It Matters |
 |---|---|---|---|
-| P1 | `time-series-forecast` | Data mining / forecasting | Adds time-series forecasting and anomaly detection breadth |
 | P2 | `yolo-object-detection` | Computer vision | Covers object detection, training/inference pipeline, model evaluation |
 | P2 | `recsys-pipeline-lab` | Recommendation system | Extends CTR into recall-ranking-reranking pipeline |
 | P2 | `diffusion-model-lab` | AIGC | Adds diffusion model understanding and generative AI direction |
@@ -172,6 +195,7 @@ llm-rag-system
   -> recommendation-system
   -> transformer-model-lab
   -> time-series-forecast
+  -> yolo-object-detection
   -> yolo-object-detection
 ```
 
@@ -212,12 +236,12 @@ GitHub portfolio focused on LLM/RAG, Agent workflows, CTR ranking, recommendatio
 | Bilingual READMEs | Passed for three core repositories and profile |
 | HR-friendly profile wording | Passed current scan |
 | Repository naming consistency | Passed for three core repositories |
-| 5-8 high-quality projects | In progress: 4 online, 1-4 recommended next |
+| 5-8 high-quality projects | Passed minimum target: 5 online, 0-3 recommended next |
 
 ## 8. Next Actions
 
 1. Pin `llm-rag-system`, `multi-agent-assistant`, and `recommendation-system` on the GitHub profile.
-2. Build `time-series-forecast` next to broaden data mining and anomaly detection coverage.
-3. Build `yolo-object-detection` or `recsys-pipeline-lab` to expand computer vision or recommendation-system coverage.
+2. Build `yolo-object-detection` or `recsys-pipeline-lab` to expand computer vision or recommendation-system coverage.
+3. Continue improving existing projects with stronger datasets, model baselines, and visual reports.
 4. Keep commits steady and meaningful, with one clear improvement per commit.
 5. Use the GitHub profile link directly in the resume after the first three repositories are pinned.

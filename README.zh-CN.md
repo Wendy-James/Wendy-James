@@ -30,6 +30,7 @@ Mathematics Background + AI Engineering + Large Language Models
 | Multi-Agent Assistant | Agent、状态图、工具调用、记忆、Verifier | 本地多Agent研究工作流，包含 Planner、Researcher、Writer、Verifier、Summarizer | 执行轨迹、工具调用日志、Verifier 指标、面试讲解文档 | [GitHub](https://github.com/Wendy-James/multi-agent-assistant) · Demo: CLI |
 | CTR Ranking Lab | CTR、推荐系统、特征交叉、排序指标 | CTR预估与排序实验项目，对比 Logistic Regression 和 GBDT 风格基线 | AUC、LogLoss、nDCG@5、可复现实验结果 | [GitHub](https://github.com/Wendy-James/recommendation-system) · Demo: CLI |
 | Transformer Model Lab | Transformer、Attention、文本分类、F1 | 轻量 Transformer 内部机制项目，覆盖分词、Embedding、Q/K/V Attention、分类器训练和 Attention Trace | Accuracy/F1 指标、阈值校准、Attention Trace、中英文 README、算法文档 | [GitHub](https://github.com/Wendy-James/transformer-model-lab) · Demo: CLI |
+| Time Series Forecast | 时间序列预测、异常检测、趋势、周期性 | 时间序列预测与异常检测项目，包含 Moving Average 和 Trend Seasonal 基线 | MAE/RMSE/MAPE 指标、Anomaly F1、残差阈值检测、可复现实验报告 | [GitHub](https://github.com/Wendy-James/time-series-forecast) · Demo: CLI |
 | Document Intelligence | 信息抽取、Schema设计、验证规则 | 面向多场景结构化文档理解的研究项目 | 项目说明、Schema设计、抽取流程说明 | [GitHub](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/adaptive-document-structuring-model) · Demo: docs |
 | AI Job Application Agent | LLM工作流、简历生成、FastAPI设计 | JD解析、候选人匹配、简历草稿生成和面试准备工作流 | 系统设计、流程拆解、后端架构规划 | [GitHub](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-career-interview-system) · Demo: docs |
 
