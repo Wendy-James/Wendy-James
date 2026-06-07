@@ -86,6 +86,7 @@ Each core project is expected to include:
 - GitHub: [https://github.com/Wendy-James](https://github.com/Wendy-James)
 - Portfolio: [https://Wendy-James.github.io/](https://Wendy-James.github.io/)
 - Portfolio build report: [docs/PORTFOLIO_BUILD_REPORT.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/PORTFOLIO_BUILD_REPORT.md)
+- Completion audit: [docs/COMPLETION_AUDIT.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/COMPLETION_AUDIT.md)
 - Algorithm profile roadmap: [docs/ALGORITHM_PROFILE_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/ALGORITHM_PROFILE_PLAN.md)
 - Resume project descriptions: [docs/RESUME_PROJECT_DESCRIPTIONS.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.md)
 - Chinese resume project descriptions: [docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md)

@@ -232,6 +232,10 @@ GitHub portfolio focused on LLM/RAG, Agent workflows, CTR ranking, recommendatio
 
 ## 7. Quality Checklist
 
+Detailed completion audit:
+
+https://github.com/Wendy-James/Wendy-James/blob/main/docs/COMPLETION_AUDIT.md
+
 | Requirement | Current Status |
 |---|---|
 | Avoid API-only wrapper projects | Passed for the five core repositories |
