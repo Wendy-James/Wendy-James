@@ -34,7 +34,7 @@
 
 ## 已上线项目
 
-- [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab)：已完成第一版可运行工程，包含 BM25 稀疏召回、稠密检索基线、Query Rewrite、RRF 多路融合、Reranker、评估指标和中英文文档。
+- [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab)：已完成第一版可运行工程，包含 BM25 稀疏召回、稠密检索基线、Query Rewrite、RRF 多路融合、Reranker、Recall/MRR/nDCG 指标和中英文文档。
 
 ## 联系方式
 

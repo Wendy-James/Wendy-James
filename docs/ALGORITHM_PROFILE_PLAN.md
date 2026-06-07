@@ -7,7 +7,7 @@
 
 ## 1. Project Research: 20 Candidate Repositories
 
-Star counts were checked with GitHub API on 2026-06-07. The goal is not to copy these projects as simple demos, but to use them as high-quality references for deep reproduction, documentation, controlled experiments, and second-stage innovation.
+Star counts were checked with GitHub API on 2026-06-07. The goal is to use these projects as high-quality references for deep reproduction, documentation, controlled experiments, and second-stage innovation.
 
 | # | Project | GitHub | Stars | Direction | Tech Stack | Difficulty | Algorithm Job Value |
 |---|---|---:|---|---|---|---|
@@ -159,7 +159,7 @@ Pinned repositories:
 5. `transformer-model-lab`
 6. `diffusion-or-timeseries-lab`
 
-Repository naming should be clear and professional. Avoid names like `demo`, `test`, `hello-llm`, or `api-wrapper`.
+Repository naming should be clear and professional, with names that reflect the algorithm topic and engineering scope.
 
 Commit style:
 
@@ -313,4 +313,3 @@ Interview explanation:
 4. Finish its deployable baseline before starting the next project.
 5. For every project, commit docs, tests, configs, and experiment logs with clear commit history.
 6. Pin the first 3 completed repositories on GitHub before adding the link to the resume.
-

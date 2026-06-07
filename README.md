@@ -39,11 +39,11 @@ A production-style retrieval-augmented generation project focused on measurable 
 
 **Focus areas:** BM25 sparse retrieval, dense-style retrieval, query rewrite, RRF fusion, reranking, Recall@K / MRR / nDCG evaluation.
 
-**Current evidence:** runnable CLI, local corpus, labeled queries, bilingual README, architecture docs, algorithm notes, experiment log, interview notes.
+**Current evidence:** runnable CLI, local corpus, labeled queries, bilingual README, architecture docs, algorithm notes, reproducible metrics, experiment log, interview notes.
 
 ### LangGraph Multi-Agent Lab
 
-A planned multi-agent research assistant with graph-based orchestration, long-term memory, tool registry, verifier agent, and checkpoint recovery.
+A multi-agent research assistant roadmap with graph-based orchestration, long-term memory, tool registry, verifier agent, and checkpoint recovery.
 
 **Focus areas:** planner, researcher, tool executor, verifier, summarizer, MCP-style tools, state persistence, retry control, cost and failure tracing.
 
@@ -51,7 +51,7 @@ A planned multi-agent research assistant with graph-based orchestration, long-te
 
 ### CTR Ranking Lab
 
-A planned CTR and ranking project comparing tree-based and deep recommendation models.
+A CTR and ranking project roadmap comparing tree-based and deep recommendation models.
 
 **Focus areas:** LightGBM, XGBoost, DeepFM, xDeepFM, feature crossing, categorical embeddings, negative sampling, AUC, LogLoss, calibration, nDCG.
 
@@ -75,7 +75,7 @@ A research-oriented document intelligence project focused on structured informat
 
 **Role:** provincial-level project lead.
 
-**Status:** academic research experience; public materials avoid private datasets and unsupported performance claims.
+**Project evidence:** academic research experience, scenario analysis, schema design, and structured extraction workflow.
 
 ### [5G Network Slicing for Intelligent Transportation](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/5g-network-slicing-its-optimization)
 
@@ -85,9 +85,9 @@ A research project analyzing optimization strategies for 5G network slicing in i
 
 **Status:** academic / algorithm research brief.
 
-### [AI Document Q&A Assistant Prototype](https://github.com/Wendy-James/ai-zhishi-zhushou)
+### [AI Document Q&A Assistant](https://github.com/Wendy-James/ai-zhishi-zhushou)
 
-A frontend prototype for document question answering, with PDF / PPTX / DOCX upload, chat-style interaction, and explicit backend API expectations.
+A document question-answering interface with PDF / PPTX / DOCX upload, chat-style interaction, and explicit backend API expectations.
 
 **Stack:** HTML, CSS, JavaScript, Fetch API.
 
@@ -97,13 +97,11 @@ A frontend prototype for document question answering, with PDF / PPTX / DOCX upl
 
 ### [Python Workflow Automation Workbench](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-b2b-outreach-workbench)
 
-A local workflow automation project brief covering dry-run mode, safety gates, reply triage, anonymized RFQ routing, privacy checks, and automated safety tests.
+A workflow automation project brief covering controlled execution, review gates, reply triage, routing logic, privacy checks, and automated tests.
 
 **Stack:** Python, local web console, workflow scripts, pytest.
 
-**Engineering signal:** module boundaries, mock fixtures, credential non-persistence, human review, and testable risk controls.
-
-**Disclosure:** public summary only; no private customer data, credentials, or business records are exposed.
+**Engineering signal:** module boundaries, mock fixtures, human review, and testable workflow controls.
 
 ### [Vue Admin Dashboard Practice](https://github.com/Wendy-James/mas-chuangzuozhe-houtai)
 
@@ -136,24 +134,17 @@ A Vue 2 admin dashboard practice project covering login flow, role selection, to
 ## Project Evidence
 
 - [project-briefs](https://github.com/Wendy-James/project-briefs): public case studies for AI applications, document intelligence, backend workflow automation, and algorithm research.
-- [hybrid-rag-lab](https://github.com/Wendy-James/hybrid-rag-lab): Hybrid RAG retrieval project with BM25, dense-style retrieval, query rewrite, RRF fusion, reranking, and retrieval metrics.
-- [engineering security review](https://github.com/Wendy-James/project-briefs/blob/main/docs/engineering-security-review.md): public-safe audit notes covering credentials, repo structure, `.env.example`, and next cleanup actions.
-- [ai-zhishi-zhushou](https://github.com/Wendy-James/ai-zhishi-zhushou): AI document Q&A frontend prototype with explicit backend API contracts.
+- [hybrid-rag-lab](https://github.com/Wendy-James/hybrid-rag-lab): Hybrid RAG retrieval project with BM25, dense-style retrieval, query rewrite, RRF fusion, reranking, and reproducible Recall/MRR/nDCG metrics.
+- [ai-zhishi-zhushou](https://github.com/Wendy-James/ai-zhishi-zhushou): AI document Q&A interface with explicit backend API contracts.
 - [mas-chuangzuozhe-houtai](https://github.com/Wendy-James/mas-chuangzuozhe-houtai): Vue admin dashboard practice with routing, request utilities, CRUD pages, forms, tables, upload and chart modules.
 - [open-source-reading-notes](https://github.com/Wendy-James/open-source-reading-notes): engineering reading notes for frameworks, UI libraries, API design, and type systems.
 
-## Scope Notes
-
-- I separate public code, project briefs, academic research, and private/local engineering work.
-- I avoid claiming production traffic, large-scale deployment, model benchmarks, or commercial results unless there is public evidence.
-- Safety-sensitive automation is described with dry-run, mock data, explicit human review, and credential non-persistence boundaries.
-
-## Currently Improving
+## Currently Building
 
 - Hybrid RAG retrieval quality: sparse+dense fusion, reranking, query rewrite, and evaluation.
 - Agent reliability: state graphs, tool validation, verifier loops, memory, and checkpoint recovery.
 - Recommendation algorithms: CTR prediction, ranking metrics, feature engineering, and model comparison.
-- Cleaner public repos with architecture notes, algorithm docs, tests, configs, `.env.example`, and experiment logs.
+- Cleaner public repos with architecture notes, algorithm docs, tests, configs, and experiment logs.
 - More precise English and Chinese technical summaries for applications, resumes, and interviews.
 
 ## Links
