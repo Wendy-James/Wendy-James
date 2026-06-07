@@ -230,15 +230,24 @@ GitHub portfolio focused on LLM/RAG, Agent workflows, CTR ranking, recommendatio
 
 | Requirement | Current Status |
 |---|---|
-| Avoid API-only wrapper projects | Passed for the three core repositories |
+| Avoid API-only wrapper projects | Passed for the five core repositories |
 | Include algorithm ability | Passed: retrieval, Agent state graph, CTR/ranking metrics |
 | Include engineering ability | Passed: CLI, scripts, structured modules, experiment outputs |
 | Include model understanding | In progress: current projects show retrieval/ranking/Agent logic; Transformer project should deepen neural model understanding |
-| Interview-ready docs | Passed for three core repositories |
-| Bilingual READMEs | Passed for three core repositories and profile |
+| Interview-ready docs | Passed for five core repositories |
+| Bilingual READMEs | Passed for five core repositories and profile |
+| Required README sections | Passed for five core repositories: intro, architecture, run commands, algorithm notes, experiment results, highlights, optimization plan, interview notes |
 | HR-friendly profile wording | Passed current scan |
-| Repository naming consistency | Passed for three core repositories |
+| Repository naming consistency | Passed for five core repositories |
 | 5-8 high-quality projects | Passed minimum target: 5 online, 0-3 recommended next |
+
+Latest verification commands:
+
+| Repository | Command | Status |
+|---|---|---|
+| `llm-rag-system` | `PYTHONPATH=src python -m hybrid_rag_lab.cli evaluate --k 3` | Passed |
+| `multi-agent-assistant` | `PYTHONPATH=src python -m multi_agent_research_lab.cli --experiment` | Passed |
+| `recommendation-system` | `PYTHONPATH=src python -m ctr_ranking_lab.cli` | Passed |
 
 ## 8. Next Actions
 
