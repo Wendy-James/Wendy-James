@@ -15,7 +15,7 @@ This audit checks the current portfolio against the GitHub algorithm project imp
 | Bilingual project READMEs | Completed | All 5 core repositories include English and Chinese READMEs |
 | Technical documentation | Completed for current core projects | Architecture, algorithm, experiment, and interview docs |
 | Project innovation points | Completed for current core projects | RAG hybrid retrieval, Agent verifier, CTR feature crossing, Transformer attention trace, time-series residual anomaly detection |
-| Resume project descriptions | Completed | English and Chinese resume description docs |
+| Resume project descriptions | Completed | English and Chinese resume description docs plus resume-ready GitHub snippet |
 | HR-friendly wording | Completed current scan | No flagged terms in profile docs |
 | Repository naming | Completed | Standardized core repository names |
 | Pinned repositories | Manual action required | GitHub API does not support direct profile pin mutation in current tooling |
@@ -45,7 +45,7 @@ This audit checks the current portfolio against the GitHub algorithm project imp
 | Secondary innovation beyond reproduction | Completed for current scope | Hybrid Search, Reranker, Query Rewrite, Verifier, feature crossing, threshold calibration, residual anomaly detection |
 | GitHub profile README | Completed | Profile README redesigned for recruiting |
 | Chinese and English versions | Completed | Profile and core projects include bilingual READMEs |
-| Resume project descriptions | Completed | `docs/RESUME_PROJECT_DESCRIPTIONS.md` and `docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md` |
+| Resume project descriptions | Completed | `docs/RESUME_PROJECT_DESCRIPTIONS.md`, `docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md`, and `docs/RESUME_GITHUB_SNIPPET.md` |
 | HR-friendly visual structure | Completed | Profile is compact, professional, and project-focused |
 | Repository count 10-20 | Completed at audit time | 13 repositories checked earlier in build report |
 | Avoid unsuitable repository names | Completed for core repositories | Core repository names standardized |
@@ -72,4 +72,3 @@ GitHub: https://github.com/Wendy-James
 ```text
 GitHub portfolio focused on LLM/RAG, Agent workflows, CTR ranking, Transformer model understanding, recommendation algorithms, and time-series forecasting.
 ```
-

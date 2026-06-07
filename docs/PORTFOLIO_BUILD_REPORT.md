@@ -56,7 +56,7 @@ The current GitHub Profile README follows the requested recruiting structure:
 | Technical roadmap | Completed | Machine Learning -> Deep Learning -> LLM -> RAG -> Agent -> Multi-Agent Systems |
 | GitHub statistics | Completed | GitHub Stats, Top Languages, Contribution Graph |
 | Bilingual README | Completed | `README.md` and `README.zh-CN.md` |
-| Resume project descriptions | Completed | `docs/RESUME_PROJECT_DESCRIPTIONS.md` |
+| Resume project descriptions | Completed | `docs/RESUME_PROJECT_DESCRIPTIONS.md`, `docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md`, `docs/RESUME_GITHUB_SNIPPET.md` |
 
 ## 4. Core Project Status
 
