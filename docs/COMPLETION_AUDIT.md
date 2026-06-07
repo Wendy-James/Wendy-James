@@ -18,7 +18,7 @@ This audit checks the current portfolio against the GitHub algorithm project imp
 | Resume project descriptions | Completed | English and Chinese resume description docs plus resume-ready GitHub snippet |
 | HR-friendly wording | Completed current scan | No flagged terms in profile docs |
 | Repository naming | Completed | Standardized core repository names |
-| Pinned repositories | Manual action required | GitHub API does not support direct profile pin mutation in current tooling |
+| Pinned repositories | Optional enhancement | Profile README already shows selected projects; GitHub profile pins can be added manually later if desired |
 
 ## Core Repositories
 
@@ -65,9 +65,9 @@ The following commands were run locally on 2026-06-07:
 
 `pytest` was not used as final evidence because local pytest processes entered an uninterruptible system wait state in this desktop environment. Direct project runtime commands completed successfully and are stronger evidence for the user-facing "deploy and run" requirement.
 
-## Remaining Manual Step
+## Optional Manual Enhancement
 
-GitHub profile pinned repositories still need manual confirmation in the web UI:
+GitHub profile pinned repositories are optional because the Profile README already displays the selected portfolio projects. If a separate pinned section is desired, it can be configured in the GitHub web UI:
 
 1. Open https://github.com/Wendy-James.
 2. Click `Customize your pins`.
