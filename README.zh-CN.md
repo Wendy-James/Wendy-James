@@ -26,9 +26,9 @@ Mathematics Background + AI Engineering + Large Language Models
 
 | 项目 | 技术标签 | 项目简介 | 核心成果 | 链接 |
 |---|---|---|---|---|
-| LLM RAG System | RAG、BM25、稠密检索、RRF、Reranker | 面向检索质量优化的 RAG 检索系统 | Recall@3/MRR@3/nDCG@3 指标、中英文 README、架构与算法文档 | [GitHub](https://github.com/Wendy-James/hybrid-rag-lab) · Demo: CLI |
-| Multi-Agent Assistant | Agent、状态图、工具调用、记忆、Verifier | 本地多Agent研究工作流，包含 Planner、Researcher、Writer、Verifier、Summarizer | 执行轨迹、工具调用日志、Verifier 指标、面试讲解文档 | [GitHub](https://github.com/Wendy-James/multi-agent-research-lab) · Demo: CLI |
-| CTR Ranking Lab | CTR、推荐系统、特征交叉、排序指标 | CTR预估与排序实验项目，对比 Logistic Regression 和 GBDT 风格基线 | AUC、LogLoss、nDCG@5、可复现实验结果 | [GitHub](https://github.com/Wendy-James/ctr-ranking-lab) · Demo: CLI |
+| LLM RAG System | RAG、BM25、稠密检索、RRF、Reranker | 面向检索质量优化的 RAG 检索系统 | Recall@3/MRR@3/nDCG@3 指标、中英文 README、架构与算法文档 | [GitHub](https://github.com/Wendy-James/llm-rag-system) · Demo: CLI |
+| Multi-Agent Assistant | Agent、状态图、工具调用、记忆、Verifier | 本地多Agent研究工作流，包含 Planner、Researcher、Writer、Verifier、Summarizer | 执行轨迹、工具调用日志、Verifier 指标、面试讲解文档 | [GitHub](https://github.com/Wendy-James/multi-agent-assistant) · Demo: CLI |
+| CTR Ranking Lab | CTR、推荐系统、特征交叉、排序指标 | CTR预估与排序实验项目，对比 Logistic Regression 和 GBDT 风格基线 | AUC、LogLoss、nDCG@5、可复现实验结果 | [GitHub](https://github.com/Wendy-James/recommendation-system) · Demo: CLI |
 | Document Intelligence | 信息抽取、Schema设计、验证规则 | 面向多场景结构化文档理解的研究项目 | 项目说明、Schema设计、抽取流程说明 | [GitHub](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/adaptive-document-structuring-model) · Demo: docs |
 | AI Job Application Agent | LLM工作流、简历生成、FastAPI设计 | JD解析、候选人匹配、简历草稿生成和面试准备工作流 | 系统设计、流程拆解、后端架构规划 | [GitHub](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-career-interview-system) · Demo: docs |
 

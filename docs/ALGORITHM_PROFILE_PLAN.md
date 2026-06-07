@@ -152,9 +152,9 @@ Algorithm Engineer Intern Candidate | LLM/RAG/Agent | Recommendation System | De
 
 Pinned repositories:
 
-1. `hybrid-rag-lab`
-2. `multi-agent-research-lab`
-3. `ctr-ranking-lab`
+1. `llm-rag-system`
+2. `multi-agent-assistant`
+3. `recommendation-system`
 4. `recsys-pipeline-lab`
 5. `transformer-model-lab`
 6. `diffusion-or-timeseries-lab`
@@ -163,9 +163,9 @@ Current launched repositories:
 
 | Repository | Direction | Status |
 |---|---|---|
-| https://github.com/Wendy-James/hybrid-rag-lab | RAG / retrieval | Runnable baseline, metrics, bilingual README, architecture and interview docs |
-| https://github.com/Wendy-James/multi-agent-research-lab | Agent / multi-agent workflow | Runnable state graph, tool-call traces, verifier metrics, bilingual README and docs |
-| https://github.com/Wendy-James/ctr-ranking-lab | Recommendation / CTR ranking | Runnable CTR experiment, model comparison, AUC/LogLoss/nDCG metrics, bilingual README and docs |
+| https://github.com/Wendy-James/llm-rag-system | RAG / retrieval | Runnable baseline, metrics, bilingual README, architecture and interview docs |
+| https://github.com/Wendy-James/multi-agent-assistant | Agent / multi-agent workflow | Runnable state graph, tool-call traces, verifier metrics, bilingual README and docs |
+| https://github.com/Wendy-James/recommendation-system | Recommendation / CTR ranking | Runnable CTR experiment, model comparison, AUC/LogLoss/nDCG metrics, bilingual README and docs |
 
 Repository naming should be clear and professional, with names that reflect the algorithm topic and engineering scope.
 

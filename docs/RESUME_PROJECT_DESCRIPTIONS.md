@@ -7,7 +7,7 @@ This document converts the selected GitHub projects into resume-ready descriptio
 
 ## 1. LLM RAG System
 
-Repository: https://github.com/Wendy-James/hybrid-rag-lab
+Repository: https://github.com/Wendy-James/llm-rag-system
 
 ### One-Line Version
 
@@ -31,7 +31,7 @@ Result: Delivered a runnable RAG project with experiment metrics, architecture d
 
 ## 2. Multi-Agent Assistant
 
-Repository: https://github.com/Wendy-James/multi-agent-research-lab
+Repository: https://github.com/Wendy-James/multi-agent-assistant
 
 ### One-Line Version
 
@@ -55,7 +55,7 @@ Result: Delivered a runnable Agent project that demonstrates state management, t
 
 ## 3. CTR Ranking Lab
 
-Repository: https://github.com/Wendy-James/ctr-ranking-lab
+Repository: https://github.com/Wendy-James/recommendation-system
 
 ### One-Line Version
 
