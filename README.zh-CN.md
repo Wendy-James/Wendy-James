@@ -16,7 +16,7 @@
 |---|---|---|
 | [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab) | RAG / 检索增强生成 | BM25、稠密检索、Query Rewrite、RRF融合、Reranker、Recall/MRR/nDCG评估 |
 | LangGraph Multi-Agent Lab | Agent / 工具调用 | 多Agent协作、长期记忆、MCP工具、状态图、失败恢复 |
-| CTR Ranking Lab | 推荐 / CTR | DeepFM、xDeepFM、LightGBM、XGBoost、特征工程、AUC/LogLoss |
+| [CTR Ranking Lab](https://github.com/Wendy-James/ctr-ranking-lab) | 推荐 / CTR | 特征工程、特征交叉、Logistic Regression、GBDT风格基线、AUC/LogLoss/nDCG@5 |
 | RecSys Pipeline Lab | 推荐系统 | 召回、排序、重排、冷启动、覆盖率与多样性 |
 | Transformer Model Lab | 深度学习 | BERT/Transformer微调、注意力可视化、LoRA、误差分析 |
 | Diffusion or Time-Series Lab | AIGC / 数据挖掘 | 扩散模型推理分析，或时间序列预测与异常检测 |
@@ -35,6 +35,7 @@
 ## 已上线项目
 
 - [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab)：已完成第一版可运行工程，包含 BM25 稀疏召回、稠密检索基线、Query Rewrite、RRF 多路融合、Reranker、Recall/MRR/nDCG 指标和中英文文档。
+- [CTR Ranking Lab](https://github.com/Wendy-James/ctr-ranking-lab)：已完成第一版可运行工程，包含 CTR 数据生成、特征工程、特征交叉、Logistic Regression、GBDT 风格模型对比、AUC/LogLoss/nDCG@5 指标和中英文文档。
 
 ## 联系方式
 

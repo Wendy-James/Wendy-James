@@ -49,13 +49,13 @@ A multi-agent research assistant roadmap with graph-based orchestration, long-te
 
 **Innovation direction:** improve reliability with critic/verifier loops, task decomposition, tool-call validation, and recoverable agent state.
 
-### CTR Ranking Lab
+### [CTR Ranking Lab](https://github.com/Wendy-James/ctr-ranking-lab)
 
-A CTR and ranking project roadmap comparing tree-based and deep recommendation models.
+A CTR prediction and ranking project comparing feature engineering, Logistic Regression, and a lightweight GBDT-style baseline.
 
 **Focus areas:** LightGBM, XGBoost, DeepFM, xDeepFM, feature crossing, categorical embeddings, negative sampling, AUC, LogLoss, calibration, nDCG.
 
-**Innovation direction:** model comparison, feature-engineering ablations, online-style ranking simulator, and segment-level error analysis.
+**Current evidence:** runnable experiment pipeline, synthetic impression data, feature crossing, AUC/LogLoss/nDCG@5 metrics, bilingual README, architecture docs, algorithm notes, interview notes.
 
 ### [AI Job Application Agent](https://github.com/Wendy-James/project-briefs/tree/main/case-studies/ai-career-interview-system)
 
@@ -135,6 +135,7 @@ A Vue 2 admin dashboard practice project covering login flow, role selection, to
 
 - [project-briefs](https://github.com/Wendy-James/project-briefs): public case studies for AI applications, document intelligence, backend workflow automation, and algorithm research.
 - [hybrid-rag-lab](https://github.com/Wendy-James/hybrid-rag-lab): Hybrid RAG retrieval project with BM25, dense-style retrieval, query rewrite, RRF fusion, reranking, and reproducible Recall/MRR/nDCG metrics.
+- [ctr-ranking-lab](https://github.com/Wendy-James/ctr-ranking-lab): CTR prediction and ranking project with feature engineering, model comparison, AUC, LogLoss, and nDCG@5 evaluation.
 - [ai-zhishi-zhushou](https://github.com/Wendy-James/ai-zhishi-zhushou): AI document Q&A interface with explicit backend API contracts.
 - [mas-chuangzuozhe-houtai](https://github.com/Wendy-James/mas-chuangzuozhe-houtai): Vue admin dashboard practice with routing, request utilities, CRUD pages, forms, tables, upload and chart modules.
 - [open-source-reading-notes](https://github.com/Wendy-James/open-source-reading-notes): engineering reading notes for frameworks, UI libraries, API design, and type systems.
