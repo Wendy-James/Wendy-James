@@ -207,6 +207,10 @@ Resume project descriptions have been generated here:
 
 https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.md
 
+Chinese resume project descriptions:
+
+https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md
+
 The document includes:
 
 - one-line resume version
