@@ -33,13 +33,13 @@ A structured plan for building an algorithm-engineer-style GitHub profile for AI
 
 **Next repositories:** Hybrid RAG Lab, LangGraph Multi-Agent Lab, CTR Ranking Lab, RecSys Pipeline Lab, Transformer Model Lab.
 
-### Hybrid RAG Lab
+### [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab)
 
-A planned production-style retrieval-augmented generation project based on LlamaIndex, Haystack, and FAISS.
+A production-style retrieval-augmented generation project focused on measurable retrieval quality before answer generation.
 
-**Focus areas:** document parsing, chunking, BM25+dense hybrid retrieval, vector indexing, reranking, query rewrite, multi-route recall, Recall@K / MRR / nDCG evaluation.
+**Focus areas:** BM25 sparse retrieval, dense-style retrieval, query rewrite, RRF fusion, reranking, Recall@K / MRR / nDCG evaluation.
 
-**Innovation direction:** compare sparse retrieval, dense retrieval, hybrid fusion, reranker strategies, and query rewrite quality under the same evaluation set.
+**Current evidence:** runnable CLI, local corpus, labeled queries, bilingual README, architecture docs, algorithm notes, experiment log, interview notes.
 
 ### LangGraph Multi-Agent Lab
 
@@ -136,6 +136,7 @@ A Vue 2 admin dashboard practice project covering login flow, role selection, to
 ## Project Evidence
 
 - [project-briefs](https://github.com/Wendy-James/project-briefs): public case studies for AI applications, document intelligence, backend workflow automation, and algorithm research.
+- [hybrid-rag-lab](https://github.com/Wendy-James/hybrid-rag-lab): Hybrid RAG retrieval project with BM25, dense-style retrieval, query rewrite, RRF fusion, reranking, and retrieval metrics.
 - [engineering security review](https://github.com/Wendy-James/project-briefs/blob/main/docs/engineering-security-review.md): public-safe audit notes covering credentials, repo structure, `.env.example`, and next cleanup actions.
 - [ai-zhishi-zhushou](https://github.com/Wendy-James/ai-zhishi-zhushou): AI document Q&A frontend prototype with explicit backend API contracts.
 - [mas-chuangzuozhe-houtai](https://github.com/Wendy-James/mas-chuangzuozhe-houtai): Vue admin dashboard practice with routing, request utilities, CRUD pages, forms, tables, upload and chart modules.

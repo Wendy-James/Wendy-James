@@ -14,7 +14,7 @@
 
 | 项目 | 方向 | 亮点 |
 |---|---|---|
-| Hybrid RAG Lab | RAG / 检索增强生成 | Hybrid Search、Reranker、Query Rewrite、多路召回、评估体系 |
+| [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab) | RAG / 检索增强生成 | BM25、稠密检索、Query Rewrite、RRF融合、Reranker、Recall/MRR/nDCG评估 |
 | LangGraph Multi-Agent Lab | Agent / 工具调用 | 多Agent协作、长期记忆、MCP工具、状态图、失败恢复 |
 | CTR Ranking Lab | 推荐 / CTR | DeepFM、xDeepFM、LightGBM、XGBoost、特征工程、AUC/LogLoss |
 | RecSys Pipeline Lab | 推荐系统 | 召回、排序、重排、冷启动、覆盖率与多样性 |
@@ -32,8 +32,11 @@
 - 二次创新点
 - 面试讲解文档
 
+## 已上线项目
+
+- [Hybrid RAG Lab](https://github.com/Wendy-James/hybrid-rag-lab)：已完成第一版可运行工程，包含 BM25 稀疏召回、稠密检索基线、Query Rewrite、RRF 多路融合、Reranker、评估指标和中英文文档。
+
 ## 联系方式
 
 - GitHub: https://github.com/Wendy-James
 - Email: 1563887189@qq.com
-
