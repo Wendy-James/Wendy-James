@@ -1,9 +1,12 @@
 # Wendy Zhan / 詹文婷
 
-**推荐算法实习生｜搜索召回｜内容理解检索**  
-**Recommendation · Retrieval · Ranking · Multimodal Search**
+**Recommendation Algorithm Intern | Search & Retrieval | Content Understanding**
 
-I am preparing for algorithm internship roles around **recommendation/search retrieval, ranking evaluation, and content understanding**. This profile is organized as a resume evidence chain: every core repository should have a clear scenario, pseudo data schema, runnable scripts, experiment tables, badcase records, and interview-safe boundaries.
+HFUT 211 · Information and Computing Science  
+Incoming MSc Computer Science Admit  
+Focus: Recommendation / Retrieval / Ranking / Offline Evaluation
+
+I am preparing for algorithm internship roles around recommendation/search retrieval, ranking evaluation, and content understanding. This profile is organized as a resume evidence chain: every featured repository should have a clear scenario, pseudo data schema, runnable scripts, experiment tables, badcase records, and interview-safe boundaries.
 
 **Target roles:** Recommendation Algorithm Intern · Search/Recommendation Intern · Content Recommendation Intern · Machine Learning Intern
 
@@ -22,14 +25,14 @@ My main line is **recommendation/search recall and ranking**, not a scattered AI
 - **Supporting retrieval project:** job knowledge-base RAG evaluation, BM25 + Dense + Reranker, Recall@5/MRR/citation hit rate.
 - **Lower-priority work:** backend, document workflow, and frontend demos are kept only as engineering support.
 
-## Core Evidence Repositories
+## Featured Projects
 
-| Priority | Repository | What it supports | Metrics / evidence to inspect | Interview boundary |
+| Order | Repository | Keywords | Evidence / metrics | Interview boundary |
 |---|---|---|---|---|
-| 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | ByteDance-oriented recommendation recall/ranking project | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079`, tail Recall@50 `0.058 -> 0.071` | Offline reproduction on pseudo/public-field schema; no company data, no online A/B claim |
-| 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | E-commerce content understanding and similar-product retrieval | `data_schema.md`, `experiments.csv`, `badcases.csv`; CLIP-style retrieval, hard negatives, SKU conflict buckets, OCR noise cases | Offline review/evaluation set; not full production owner |
-| 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | Retrieval evaluation supplement for RAG/search ability | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` with reranking | Supporting project only; not positioned as large-model training |
-| 4 | [ctr-ranking-lab](https://github.com/Wendy-James/ctr-ranking-lab) | Ranking fundamentals and feature/evaluation practice | CTR features, AUC/LogLoss, feature crossing, experiment tracking | Fundamentals repo, not the main resume project |
+| 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Offline reproduction on pseudo/public-field schema; no company data, no online A/B claim |
+| 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | Offline review/evaluation set; not full production owner |
+| 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` | Supporting project only; not positioned as large-model training |
+| 4 | [recommendation-system](https://github.com/Wendy-James/recommendation-system) | CTR Ranking Lab / Feature Crossing / AUC / LogLoss / nDCG | CTR features, AUC/LogLoss, feature crossing, nDCG, experiment tracking | Fundamentals repo, not the main resume project |
 
 ## Main Interview Story
 
