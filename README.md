@@ -6,7 +6,7 @@ HFUT 211 · Information and Computing Science
 Incoming MSc Computer Science Admit  
 Focus: Recommendation / Retrieval / Ranking / Offline Evaluation
 
-I am preparing for algorithm internship roles around recommendation/search retrieval, ranking evaluation, and content understanding. This profile is organized as a resume evidence chain: every featured repository should have a clear scenario, pseudo data schema, runnable scripts, experiment tables, badcase records, and interview-safe boundaries.
+I am preparing for algorithm internship roles around recommendation/search retrieval, ranking evaluation, and content understanding. This profile highlights reproducible algorithm experiments: each featured repository keeps a clear scenario, data schema, runnable scripts, experiment tables, badcase records, and explicit data boundaries.
 
 **Target roles:** Recommendation Algorithm Intern · Search/Recommendation Intern · Content Recommendation Intern · Machine Learning Intern
 
@@ -29,8 +29,8 @@ My main line is **recommendation/search recall and ranking**, not a scattered AI
 
 | Order | Repository | Keywords | Evidence / metrics | Interview boundary |
 |---|---|---|---|---|
-| 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Offline reproduction on pseudo/public-field schema; no company data, no online A/B claim |
-| 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | Offline review/evaluation set; not full production owner |
+| 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Public-field offline reproduction; no company data, no online A/B claim |
+| 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | Sanitized public reproduction; not full production owner |
 | 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` | Supporting project only; not positioned as large-model training |
 
 ## Supporting Repositories
