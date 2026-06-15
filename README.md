@@ -32,7 +32,13 @@ My main line is **recommendation/search recall and ranking**, not a scattered AI
 | 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Offline reproduction on pseudo/public-field schema; no company data, no online A/B claim |
 | 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | Offline review/evaluation set; not full production owner |
 | 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` | Supporting project only; not positioned as large-model training |
-| 4 | [recommendation-system](https://github.com/Wendy-James/recommendation-system) | CTR Ranking Lab / Feature Crossing / AUC / LogLoss / nDCG | CTR features, AUC/LogLoss, feature crossing, nDCG, experiment tracking | Fundamentals repo, not the main resume project |
+
+## Supporting Repositories
+
+| Repository | Role | Boundary |
+|---|---|---|
+| [recommendation-system](https://github.com/Wendy-James/recommendation-system) | CTR/ranking fundamentals practice with Logistic Regression, feature crossing, AUC/LogLoss/nDCG notes | Kept as a basic learning repo; not pinned or promoted as a core resume project |
+| Other Agent / Document / Frontend repos | Engineering workflow and UI practice | Supporting evidence only; they should not dilute the recommendation/search positioning |
 
 ## Main Interview Story
 
