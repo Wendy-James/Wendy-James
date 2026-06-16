@@ -43,7 +43,7 @@ The profile should be scanned through these pinned repositories, in this order:
 5. `transformer-model-lab`
 6. `open-source-reading-notes`
 
-Other frontend, static-site, course-template, or admin-dashboard practice repositories are not part of the algorithm interview story. They can stay public, but they should not be pinned or introduced before the recommendation/search/retrieval projects.
+This profile is intentionally organized around recommendation/search/retrieval evidence. Please scan the pinned repositories in the order above.
 
 ## Main Interview Story
 
@@ -73,12 +73,11 @@ If asked "which project is your strongest?", I will start from **short-video rec
 - RAG is a retrieval-evaluation supplement, not my main large-model training direction.
 - The profile is intentionally narrowed to **recommendation/search/content retrieval** for algorithm internship interviews.
 
-## Links
+## Core Links
 
-- Portfolio: [https://Wendy-James.github.io/](https://Wendy-James.github.io/)
-- Algorithm profile roadmap: [docs/ALGORITHM_PROFILE_PLAN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/ALGORITHM_PROFILE_PLAN.md)
-- Resume project descriptions: [docs/RESUME_PROJECT_DESCRIPTIONS.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.md)
-- Chinese resume project descriptions: [docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md](https://github.com/Wendy-James/Wendy-James/blob/main/docs/RESUME_PROJECT_DESCRIPTIONS.zh-CN.md)
+- Short-video recommendation: [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce)
+- E-commerce retrieval: [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval)
+- Retrieval-evaluation supplement: [llm-rag-system](https://github.com/Wendy-James/llm-rag-system)
 
 ## GitHub Stats
 
