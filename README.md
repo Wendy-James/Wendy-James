@@ -6,7 +6,7 @@ HFUT 211 · Information and Computing Science
 Incoming MSc Computer Science Admit  
 Focus: Recommendation / Retrieval / Ranking / Offline Evaluation
 
-I am preparing for algorithm internship roles around recommendation/search retrieval, ranking evaluation, and content understanding. This profile highlights reproducible algorithm experiments: each featured repository keeps a clear scenario, data schema, runnable scripts, experiment tables, badcase records, and explicit data boundaries.
+I build reproducible algorithm projects around recommendation/search retrieval, ranking evaluation, and content understanding. The featured repositories keep clear scenarios, data schemas, runnable scripts, experiment tables, badcase records, and data-boundary notes.
 
 **Target roles:** Recommendation Algorithm Intern · Search/Recommendation Intern · Content Recommendation Intern · Machine Learning Intern
 
@@ -26,22 +26,22 @@ I focus on **recommendation / search / retrieval**:
 
 ## Featured Projects
 
-| Order | Repository | Keywords | Evidence / metrics | Interview boundary |
+| Order | Repository | Keywords | Evidence / metrics | Scope |
 |---|---|---|---|---|
-| 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Public-field offline reproduction; no company data, no online A/B claim |
-| 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | Sanitized public reproduction; not full production owner |
-| 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` | Supporting project only; not positioned as large-model training |
+| 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Offline recall evaluation |
+| 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP-style Retrieval / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | E-commerce retrieval evaluation |
+| 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` | Retrieval-evaluation supplement |
 
-## Repository Display Rule
+## Repository Focus
 
-The first screen should highlight only the recommendation/search/retrieval line:
+The profile is intentionally focused on the recommendation/search/retrieval line:
 
 - `short-video-recsys-reproduce`
 - `ecommerce-multimodal-retrieval`
 - `llm-rag-system`
 - `open-source-reading-notes` or portfolio, optional
 
-Other practice repositories stay unpinned so they do not dilute the algorithm-intern positioning.
+Other practice repositories are kept out of the main story so the first impression stays aligned with algorithm internship roles.
 
 ## Main Interview Story
 
@@ -64,7 +64,7 @@ If asked "which project is your strongest?", I will start from **short-video rec
 | RAG Retrieval Support | BM25, dense retrieval, RRF, reranker, chunk-size ablation, citation hit rate |
 | Engineering | Python, PyTorch-style training scripts, SQL/data schema thinking, Git, Linux, reproducible experiment logs |
 
-## What This Profile Does Not Claim
+## Data Boundary
 
 - No private company data is published.
 - No online ownership or production A/B lift is claimed.
