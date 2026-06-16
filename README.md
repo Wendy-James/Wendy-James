@@ -1,6 +1,6 @@
 # Wendy Zhan / 詹文婷
 
-**Recommendation Algorithm Intern | Search & Retrieval | Content Understanding**
+**Algorithm Intern Candidate | Recommendation / Search Retrieval / Ranking | PyTorch + Faiss | Offline Evaluation / Negative Sampling / Badcase Analysis**
 
 HFUT 211 · Information and Computing Science  
 Incoming MSc Computer Science Admit  
