@@ -32,13 +32,10 @@ My main line is **recommendation/search recall and ranking**, not a scattered AI
 | 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Public-field offline reproduction; no company data, no online A/B claim |
 | 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | Sanitized public reproduction; not full production owner |
 | 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` | Supporting project only; not positioned as large-model training |
-| 4 | [recommendation-system](https://github.com/Wendy-James/recommendation-system) | CTR / Feature Crossing / AUC / LogLoss / nDCG | ranking fundamentals, feature engineering notes, baseline metrics | Basic ranking practice; lower priority than short-video recall |
-| 5 | [transformer-model-lab](https://github.com/Wendy-James/transformer-model-lab) | Transformer / Attention / PyTorch / Training Notes | sequence modeling and model-structure practice | Foundation repo; used to support model understanding, not claimed as large-model training |
-| 6 | [open-source-reading-notes](https://github.com/Wendy-James/open-source-reading-notes) | Papers / Source Reading / Retrieval / Recommendation Notes | reading notes and implementation checklists | Learning record; supports interview discussion but not a business project |
 
 ## Repository Display Rule
 
-The first screen should only show the algorithm line above. Older Vue, HTML e-commerce practice, admin dashboard, document workflow, and generic backend demos are engineering exercises and should stay unpinned or archived so they do not dilute the recommendation/search positioning.
+The first screen should only show the three repositories above. `recommendation-system`, `transformer-model-lab`, and `open-source-reading-notes` are learning/foundation records and should not compete with the main recommendation/search/retrieval story. Older Vue, HTML e-commerce practice, admin dashboard, document workflow, and generic backend demos are engineering exercises and should stay unpinned or archived so they do not dilute the positioning.
 
 ## Main Interview Story
 
