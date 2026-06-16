@@ -16,14 +16,13 @@ I am preparing for algorithm internship roles around recommendation/search retri
   <a href="mailto:1563887189@qq.com"><img alt="Email" src="https://img.shields.io/badge/Email-1563887189%40qq.com-0f766e?style=flat-square"></a>
 </p>
 
-## Positioning
+## Focus
 
-My main line is **recommendation/search recall and ranking**, not a scattered AI-app portfolio.
+I focus on **recommendation / search / retrieval**:
 
-- **Primary project:** short-video recommendation reproduction, Two-Tower recall, Faiss top-k retrieval, time split, Recall@50/NDCG@50, leakage check.
-- **Supporting internship evidence:** e-commerce multimodal retrieval, CLIP-style dual encoder, hard negatives, SKU conflict and OCR-noise badcases.
-- **Supporting retrieval project:** job knowledge-base RAG evaluation, BM25 + Dense + Reranker, Recall@5/MRR/citation hit rate.
-- **Lower-priority work:** backend, document workflow, and frontend demos are kept only as engineering support.
+1. **Short-video recommendation:** Two-Tower recall, Faiss TopK, time split, Recall@K / NDCG@K, ablation and leakage check.
+2. **E-commerce multimodal retrieval:** CLIP-style image-text retrieval, hard negatives, SKU conflict and OCR-noise badcases.
+3. **RAG retrieval evaluation:** BM25 + Dense + Reranker, evidence citation, no-answer control and chunk ablation.
 
 ## Featured Projects
 
@@ -35,7 +34,14 @@ My main line is **recommendation/search recall and ranking**, not a scattered AI
 
 ## Repository Display Rule
 
-The first screen should only show the three repositories above. `recommendation-system`, `transformer-model-lab`, and `open-source-reading-notes` are learning/foundation records and should not compete with the main recommendation/search/retrieval story. Older Vue, HTML e-commerce practice, admin dashboard, document workflow, and generic backend demos are engineering exercises and should stay unpinned or archived so they do not dilute the positioning.
+The first screen should highlight only the recommendation/search/retrieval line:
+
+- `short-video-recsys-reproduce`
+- `ecommerce-multimodal-retrieval`
+- `llm-rag-system`
+- `open-source-reading-notes` or portfolio, optional
+
+Other practice repositories stay unpinned so they do not dilute the algorithm-intern positioning.
 
 ## Main Interview Story
 
