@@ -34,14 +34,16 @@ I focus on **recommendation / search / retrieval**:
 
 ## Repository Focus
 
-The profile is intentionally focused on the recommendation/search/retrieval line:
+The profile should be scanned through these pinned repositories, in this order:
 
-- `short-video-recsys-reproduce`
-- `ecommerce-multimodal-retrieval`
-- `llm-rag-system`
-- `open-source-reading-notes` or portfolio, optional
+1. `short-video-recsys-reproduce`
+2. `ecommerce-multimodal-retrieval`
+3. `llm-rag-system`
+4. `recommendation-system`
+5. `transformer-model-lab`
+6. `open-source-reading-notes`
 
-Other practice repositories are kept out of the main story so the first impression stays aligned with algorithm internship roles.
+Other frontend, static-site, course-template, or admin-dashboard practice repositories are not part of the algorithm interview story. They can stay public, but they should not be pinned or introduced before the recommendation/search/retrieval projects.
 
 ## Main Interview Story
 
