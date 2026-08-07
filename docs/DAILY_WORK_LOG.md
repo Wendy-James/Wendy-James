@@ -4,7 +4,7 @@ Last synced: 2026-08-07 17:35 Asia/Shanghai
 
 This page is a public-facing index of Codex-assisted Hungry Studio internship outcomes from 2026-07-21 onward. It summarizes deliverables and keeps sensitive raw files out of the profile repository unless they are explicitly prepared for public release.
 
-For the internship-specific version, see [Hungry Studio Internship Log](HUNGRY_STUDIO_INTERNSHIP_LOG.md).
+For the internship-specific version, see [Hungry Studio Internship Log](HUNGRY_STUDIO_INTERNSHIP_LOG.md). For charts and visual analysis, see [Hungry Studio Internship Visual Summary](HUNGRY_STUDIO_VISUAL_SUMMARY.md).
 
 ## 2026-08-07
 
