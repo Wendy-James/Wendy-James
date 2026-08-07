@@ -1,25 +1,34 @@
 # Daily Work Log
 
-Last synced: 2026-08-07 16:30 Asia/Shanghai
+Last synced: 2026-08-07 17:35 Asia/Shanghai
 
-This page is a public-facing index of Codex-assisted work outcomes from 2026-07-21 onward. It summarizes deliverables and keeps sensitive raw files out of the profile repository unless they are explicitly prepared for public release.
+This page is a public-facing index of Codex-assisted Hungry Studio internship outcomes from 2026-07-21 onward. It summarizes deliverables and keeps sensitive raw files out of the profile repository unless they are explicitly prepared for public release.
+
+For the internship-specific version, see [Hungry Studio Internship Log](HUNGRY_STUDIO_INTERNSHIP_LOG.md).
 
 ## 2026-08-07
 
+- Hungry Studio internship: continued Block Blast GP / MahjongTile / BC full-data modeling and deployment packaging.
 - GitHub profile sync: confirmed the GitHub account `Wendy-James` and prepared a recurring sync workflow for daily work outcomes.
 - Feature engineering model work: continued Block Blast GP / Mahjong / BC full-data model training and comparison tasks.
 - Local cleanup: scanned desktop and project files for redundant or unused files.
 
 ## 2026-08-05
 
+- Hungry Studio internship: ran MahjongTile modeling variants and ML-SHAP-style evaluations.
 - Model comparison: compared model performance across parallel Codex tasks, focusing on accuracy, stability, and multi-dimensional capability.
 
 ## 2026-08-03
 
+- Hungry Studio internship: evaluated model runs and organized downloaded model/result tables.
 - Video annotation project: installed and deployed the current project environment.
 - Downloaded spreadsheet cleanup: standardized downloaded spreadsheet names to improve retrieval and reuse.
 - Code review: analyzed four code files and summarized their structure, risks, and improvement points.
 - Model evaluation: ran model evaluation workflows and calculated metrics such as Spearman correlation.
+
+## 2026-08-01 to 2026-08-02
+
+- Hungry Studio internship: no public-ready artifact detected in Codex output folders; kept as internal work-log placeholders.
 
 ## 2026-07-31
 
@@ -32,6 +41,7 @@ This page is a public-facing index of Codex-assisted work outcomes from 2026-07-
 
 ## 2026-07-29
 
+- Hungry Studio internship: produced Block Blast GP DataWorks audit outputs and baseline prediction analysis.
 - GitHub account setup: confirmed browser login for GitHub.
 - DataWorks audit report: built an offline preview/report for Block Blast GP baseline prediction analysis.
 - Output artifacts observed:
@@ -48,12 +58,14 @@ This page is a public-facing index of Codex-assisted work outcomes from 2026-07-
 
 ## 2026-07-28
 
+- Hungry Studio internship: prepared DataWorks growth-analysis SQL and feature-engineering data exploration SQL.
 - DataWorks SQL analysis: prepared growth-analysis SQL examples and feature-engineering data exploration SQL.
 - Project scale assessment: estimated Block Blast GP data scale and framed the LTV + retention prediction objective.
 - Data definition work: organized metric and field definitions for downstream modeling.
 
 ## 2026-07-27
 
+- Hungry Studio internship: built the first public-friendly Block Blast GP CAPI/LTV feature engineering delivery package.
 - Feature engineering package: produced a public-friendly Block Blast GP CAPI/LTV delivery package.
 - Output artifacts observed:
   - `00_bb_capi_ltv_delivery_guide.md`
@@ -74,9 +86,14 @@ This page is a public-facing index of Codex-assisted work outcomes from 2026-07-
 
 ## 2026-07-24
 
+- Hungry Studio internship: prepared local modeling environment and network/tooling checks.
 - Environment setup: deployed LightGBM / XGBoost and related tooling.
 - Network check: diagnosed network connectivity.
 - Desktop/code fix report: generated `desktop_code_fix_report.pdf`.
+
+## 2026-07-25 to 2026-07-26
+
+- Hungry Studio internship: continued setup and modeling preparation; no public-ready artifact detected in Codex output folders.
 
 ## 2026-07-23
 
@@ -87,9 +104,13 @@ This page is a public-facing index of Codex-assisted work outcomes from 2026-07-
 
 - Early workspace setup: created dated Codex workspaces and initial output folders.
 
+## 2026-07-21
+
+- Hungry Studio internship: internship start date; initialized public work-log baseline.
+
 ## Automation Plan
 
 - Sync cadence: three times per day.
-- Scope: Codex tasks and output folders from 2026-07-21 onward.
+- Scope: Hungry Studio internship work, Codex tasks, and output folders from 2026-07-21 onward.
 - Destination: GitHub profile repository `Wendy-James/Wendy-James`.
 - Public boundary: publish summaries and prepared artifact indexes; avoid raw private documents unless explicitly reviewed.
