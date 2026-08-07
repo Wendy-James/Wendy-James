@@ -85,6 +85,7 @@ I keep a running public work log for Hungry Studio internship deliverables from 
 
 - Latest index: [Daily Work Log](docs/DAILY_WORK_LOG.md)
 - Internship log: [Hungry Studio Internship Log](docs/HUNGRY_STUDIO_INTERNSHIP_LOG.md)
+- Visual summary: [Hungry Studio Internship Visual Summary](docs/HUNGRY_STUDIO_VISUAL_SUMMARY.md)
 - Sync target: this GitHub profile repository
 - Cadence: three scheduled sync checks per day
 - Boundary: summaries and prepared artifact indexes only; raw private files are not published by default
