@@ -79,6 +79,15 @@ If asked "which project is your strongest?", I will start from **short-video rec
 - E-commerce retrieval: [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval)
 - Retrieval-evaluation supplement: [llm-rag-system](https://github.com/Wendy-James/llm-rag-system)
 
+## Daily Work Sync
+
+I keep a running public work log for Codex-assisted deliverables from 2026-07-21 onward:
+
+- Latest index: [Daily Work Log](docs/DAILY_WORK_LOG.md)
+- Sync target: this GitHub profile repository
+- Cadence: three scheduled sync checks per day
+- Boundary: summaries and prepared artifact indexes only; raw private files are not published by default
+
 ## GitHub Stats
 
 <p>
