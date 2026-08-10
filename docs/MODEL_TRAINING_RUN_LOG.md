@@ -1,7 +1,7 @@
 # Model Training Run Log
 
 Scope: Hungry Studio internship, 2026-07-21 onward  
-Last synced: 2026-08-10 14:06 Asia/Shanghai
+Last synced: 2026-08-10 20:01 Asia/Shanghai
 
 This page records detailed daily model-training work: how many runs were completed, what changed in each run, how long it took, what improved, and which directions were rejected. It is public-safe and does not publish raw company data, credentials, internal URLs, or unreviewed business details.
 
@@ -17,7 +17,7 @@ Counting rule: one top-level training task counts once, even if it contains mult
 
 ## 2026-08-10 Shared Scoring / Deployment Update
 
-No new successful model-training run was detected for 2026-08-10 during this sync. The new work is engineering validation, shared-table migration evidence, release packaging, runtime verification, fail-safe testing, and reporting.
+No new successful model-training run was detected for 2026-08-10 during this sync. The new work is engineering validation, shared-table migration evidence, release packaging, runtime verification, fail-safe testing, scratch-table safety, workbook validation, and reporting.
 
 | Area | Detail | Outcome |
 |---|---|---|
@@ -28,6 +28,19 @@ No new successful model-training run was detected for 2026-08-10 during this syn
 | Unified command | Installed unified DSW command `run run_score.sh --biz_date ... --hour ...`. | Dry-run passed for all three games with `ALL_THREE_MODELS_DRY_RUN_SUCCESS`. |
 | Runtime gate | Real no-publish chain proved the functional path but BB SQL exceeded the 120s SLA. | Fail-safe candidate cancelled the remote BB instance at the SLA boundary, returned `124`, blocked MJ/BC, and wrote nothing to the shared table. |
 | Reporting | Generated weekly algorithm internship report and three-model final-version reports with visual analysis. | Public log records artifact names only; raw internal documents and private data remain local. |
+| BB direct-select release | Packaged `bb_model006_v2_single_reducer_direct_select_20260810_v3` for model `bb_model006_trajectory_positive_blend_015_20260809_v2`. | Status is `READY_FOR_DSW_UPLOAD`; compressed checksum `3ef72bfe7537c3280864abf6f90e7f2b2c5359b6bb24c5556c83f5fbbe1cdfda` is tracked for release integrity. |
+| BB single-reducer candidate | Prepared `bb_model006_v2_single_reducer_direct_20260810_v1` with the SQL change limited to final reducer distribution. | Status is `LOCAL_VERIFIED_CANDIDATE_PENDING_REMOTE_GATE`; no promotion until remote gate passes. |
+| Scratch-table handoff | Documented scratch-admin path for the authoritative 147-column historical result schema plus `run_id` partition cleanup. | Keeps create/drop permissions isolated from the shared production table and avoids broad mutation access. |
+| Combined workbook | Validated `three_games_combined_visible_20260810.xlsx` for three-game review. | 40,331 rows total; BB 27,362 / MJ 8,041 / BC 4,928; all identity checks pass and formula error count is 0. |
+
+### 2026-08-10 Training Count
+
+| Type | Count | Runtime | Notes |
+|---|---:|---:|---|
+| New successful model-training runs | 0 | 0h | No algorithm/feature/target retraining was detected in the evening increment. |
+| Release or deployment packaging | 3 | Postprocessing only | BB direct-select, BB single-reducer candidate, and scratch-table handoff packages/docs were updated. |
+| Workbook/report validation | 1 workbook + reports | Postprocessing only | Three-game visible workbook and audience-specific report files were validated or indexed. |
+| Failed/interrupted training | 0 | 0h | No new failed or restarted model-training task was detected in this increment. |
 
 ## 2026-08-09 Deployment / Validation Update
 
