@@ -1,7 +1,7 @@
 # Hungry Studio Internship Log
 
 Internship start date: 2026-07-21  
-Last synced: 2026-08-10 14:06 Asia/Shanghai
+Last synced: 2026-08-10 20:01 Asia/Shanghai
 
 This is a public-facing internship work log. It records daily outcomes and deliverable categories, while avoiding raw private company data, credentials, internal URLs, and unreviewed business details.
 
@@ -36,7 +36,7 @@ This is a public-facing internship work log. It records daily outcomes and deliv
 | 2026-08-07 | Completed 18 top-level model-training tasks across Block Blast, Block Crush, and Mahjong Tile; finalized full-data CatBoost, trajectory, recency, seed-stability, Tweedie, deep-capacity, and deployment-oriented checks; prepared GitHub profile automation and work-log deployment. | Detailed model run log; `mahjongtile_c17_deploy_update_20260807.tar.gz`; `mahjongtile_c17_sql_hotfix_20260807_v2.tar.gz`; GitHub profile sync automation. |
 | 2026-08-08 | Scheduled sync maintenance; no new public-ready local artifact detected beyond the finalized 2026-08-07 model-training summary. | Automation check record; updated daily log boundary. |
 | 2026-08-09 | Packaged Block Crush V6 into a shared-hourly scoring adapter for the three-game table, locked partition safety, documented DSW rollout, and prepared one-time Aug-04 OOT evaluation materials. | `BC-V6-SHARED-HOURLY-20260809-R1`; release manifest; DSW rollout notes; acceptance SQL; Aug-04 OOT SQL/scorer/test assets. |
-| 2026-08-10 | Unified BB/MJ/BC hourly scoring command and release evidence; verified 17-column shared-table contract; confirmed dry-run success and fail-safe behavior when BB SQL exceeded SLA; produced weekly report and three-model summary visuals. | Weekly report PDF; three-model final-version PDF/DOCX; `unified_three_game_runtime_effect_20260810.json`; `unified_three_game_command_verification_20260810.json`; shared schema migration evidence. |
+| 2026-08-10 | Unified BB/MJ/BC hourly scoring command and release evidence; verified 17-column shared-table contract; confirmed dry-run success and fail-safe behavior when BB SQL exceeded SLA; prepared BB single-reducer/direct-select packages, scratch-table handoff, combined three-game workbook validation, and weekly/three-model reports. | Weekly report PDF/DOCX; three-model final-version PDF/DOCX; `bb_model006_v2_single_reducer_direct_select_20260810_v3`; `bb_model006_v2_single_reducer_direct_20260810_v1`; `three_games_combined_visible_20260810.xlsx`; `unified_three_game_runtime_effect_20260810.json`; shared schema migration evidence. |
 
 ## Artifact Index
 
@@ -59,12 +59,17 @@ This is a public-facing internship work log. It records daily outcomes and deliv
 - Deployment archives prepared on 2026-08-07: `mahjongtile_c17_deploy_update_20260807.tar.gz` and `mahjongtile_c17_sql_hotfix_20260807_v2.tar.gz`.
 - Block Crush shared-hourly release prepared on 2026-08-09: `BC-V6-SHARED-HOURLY-20260809-R1`, with exact `dt/hour/bundle_id` partition-scope protection and DSW rollout checks.
 - Shared-table deployment evidence prepared on 2026-08-10: 17-column migration evidence, unified command verification, BB/MJ/BC release package index, fail-safe runtime report, and cross-game acceptance checklist.
+- Block Blast 2026-08-10 release packaging: `bb_model006_v2_single_reducer_direct_select_20260810_v3` is marked `READY_FOR_DSW_UPLOAD` with compressed checksum `3ef72bfe7537c3280864abf6f90e7f2b2c5359b6bb24c5556c83f5fbbe1cdfda`; `bb_model006_v2_single_reducer_direct_20260810_v1` remains a local-verified candidate pending remote gate.
+- Scratch-admin handoff: documented isolated scratch-table creation using the 147-column historical result schema plus `run_id` partition cleanup, without shared-table or project-wide mutation privilege.
+- Combined three-game workbook: `three_games_combined_visible_20260810.xlsx` validates 40,331 rows across BB 27,362 / MJ 8,041 / BC 4,928, with all identity contracts passing and zero formula errors.
 
 ### Reporting Outputs
 
 - Weekly report: `算法工程实习生周报_2026-08-03至2026-08-09.pdf`.
 - Three-model final summary: `三个小时价值模型最终版本总结_20260810.pdf` and visual-optimized version.
 - Visual assets: `three_model_metric_context_20260810.png`, `three_model_metric_context_visual_20260810.png`, `three_model_training_framework_20260810.png`.
+- Editable and audience-specific summaries: `8.3-8.9工作总结.docx`, `三个小时价值模型目标梳理_数据分析师简版_20260810.pdf`, `三个小时价值模型最终版本总结_简洁楷体版_20260810.docx`, and `最终版本—总结.pdf`.
+- Block Crush handoff docs: `BC_V6_R2_下游交付与接入说明_v1.0.docx` and `BC_V6_R2_下游数据分析师接入手册_精简版_v1.0.docx`.
 
 ## Visual Analysis
 
