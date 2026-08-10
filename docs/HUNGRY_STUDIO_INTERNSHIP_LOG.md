@@ -1,7 +1,7 @@
 # Hungry Studio Internship Log
 
 Internship start date: 2026-07-21  
-Last synced: 2026-08-07 17:35 Asia/Shanghai
+Last synced: 2026-08-10 14:06 Asia/Shanghai
 
 This is a public-facing internship work log. It records daily outcomes and deliverable categories, while avoiding raw private company data, credentials, internal URLs, and unreviewed business details.
 
@@ -33,7 +33,10 @@ This is a public-facing internship work log. It records daily outcomes and deliv
 | 2026-08-04 | Generated full-stage Block Blast GP work summary, local training strategy comparison, MahjongTile preflight/recovery reports, and multiple SHAP-style model runs. | `Block_Blast_GP_全阶段工作梳理说明_20260804.pdf`; MahjongTile ML-SHAP reports. |
 | 2026-08-05 | Ran MahjongTile modeling variants C0/C2/C2A/C4/C5/C6/C7/C8, generated feature audits, model metrics, robustness checks, comparison PDFs/PNGs, and workbook outputs. | ML-SHAP output folders; model comparison artifacts; feature importance and robustness reports. |
 | 2026-08-06 | Prepared BC-related OSS/model execution context and continued deployment-oriented checks. | OSS path review notes; deployment preparation record. |
-| 2026-08-07 | Continued Block Blast GP / MahjongTile / BC full-data model training and deployment packaging; prepared GitHub profile automation and work-log deployment. | `mahjongtile_c17_deploy_update_20260807.tar.gz`; `mahjongtile_c17_sql_hotfix_20260807_v2.tar.gz`; GitHub profile sync automation. |
+| 2026-08-07 | Completed 18 top-level model-training tasks across Block Blast, Block Crush, and Mahjong Tile; finalized full-data CatBoost, trajectory, recency, seed-stability, Tweedie, deep-capacity, and deployment-oriented checks; prepared GitHub profile automation and work-log deployment. | Detailed model run log; `mahjongtile_c17_deploy_update_20260807.tar.gz`; `mahjongtile_c17_sql_hotfix_20260807_v2.tar.gz`; GitHub profile sync automation. |
+| 2026-08-08 | Scheduled sync maintenance; no new public-ready local artifact detected beyond the finalized 2026-08-07 model-training summary. | Automation check record; updated daily log boundary. |
+| 2026-08-09 | Packaged Block Crush V6 into a shared-hourly scoring adapter for the three-game table, locked partition safety, documented DSW rollout, and prepared one-time Aug-04 OOT evaluation materials. | `BC-V6-SHARED-HOURLY-20260809-R1`; release manifest; DSW rollout notes; acceptance SQL; Aug-04 OOT SQL/scorer/test assets. |
+| 2026-08-10 | Unified BB/MJ/BC hourly scoring command and release evidence; verified 17-column shared-table contract; confirmed dry-run success and fail-safe behavior when BB SQL exceeded SLA; produced weekly report and three-model summary visuals. | Weekly report PDF; three-model final-version PDF/DOCX; `unified_three_game_runtime_effect_20260810.json`; `unified_three_game_command_verification_20260810.json`; shared schema migration evidence. |
 
 ## Artifact Index
 
@@ -46,17 +49,27 @@ This is a public-facing internship work log. It records daily outcomes and deliv
 ### Modeling And Evaluation
 
 - Block Blast GP reports: baseline analysis, feature processing, D0 audit, OOT maturity/target stability, hourly trajectory diagnostics, ablation reports, final OOT model effect, and full workflow summary.
-- MahjongTile model runs: C0/C2/C2A/C4/C5/C6/C7/C8 variants with metrics, feature importance, robustness checks, threshold reports, and holdout predictions.
+- MahjongTile model runs: C0/C2/C2A/C4/C5/C6/C7/C8/C17 variants with metrics, feature importance, robustness checks, threshold reports, and holdout predictions.
+- 2026-08-07 model-training summary: 18 successful top-level runs, about 6h 26m 42s, with separate tracking for failed, interrupted, and postprocessing-only work.
 - Model artifacts: selected `.joblib` models and feature transform manifests kept locally; public profile records only summary-level deliverables.
 
 ### Deployment-Oriented Work
 
 - MahjongTile scoring package: `mahjongtile_hourly_model` with `train.py`, `score.py`, `run_hour.py`, `train_data.sql`, `score.sql`, and model manifest.
 - Deployment archives prepared on 2026-08-07: `mahjongtile_c17_deploy_update_20260807.tar.gz` and `mahjongtile_c17_sql_hotfix_20260807_v2.tar.gz`.
+- Block Crush shared-hourly release prepared on 2026-08-09: `BC-V6-SHARED-HOURLY-20260809-R1`, with exact `dt/hour/bundle_id` partition-scope protection and DSW rollout checks.
+- Shared-table deployment evidence prepared on 2026-08-10: 17-column migration evidence, unified command verification, BB/MJ/BC release package index, fail-safe runtime report, and cross-game acceptance checklist.
+
+### Reporting Outputs
+
+- Weekly report: `算法工程实习生周报_2026-08-03至2026-08-09.pdf`.
+- Three-model final summary: `三个小时价值模型最终版本总结_20260810.pdf` and visual-optimized version.
+- Visual assets: `three_model_metric_context_20260810.png`, `three_model_metric_context_visual_20260810.png`, `three_model_training_framework_20260810.png`.
 
 ## Visual Analysis
 
 - Timeline, deliverable mix, workflow map, and maturity snapshot are maintained in [Hungry Studio Internship Visual Summary](HUNGRY_STUDIO_VISUAL_SUMMARY.md).
+- Detailed model counts, run durations, changes, improvements, failures, and decisions are maintained in [Model Training Run Log](MODEL_TRAINING_RUN_LOG.md).
 - Future sync runs should update both daily text records and visual summaries when new work content or deliverables appear.
 
 ## Public Boundary
