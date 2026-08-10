@@ -1,7 +1,7 @@
 # Model Training Run Log
 
 Scope: Hungry Studio internship, 2026-07-21 onward  
-Last synced: 2026-08-07 18:05 Asia/Shanghai
+Last synced: 2026-08-10 14:06 Asia/Shanghai
 
 This page records detailed daily model-training work: how many runs were completed, what changed in each run, how long it took, what improved, and which directions were rejected. It is public-safe and does not publish raw company data, credentials, internal URLs, or unreviewed business details.
 
@@ -10,14 +10,40 @@ This page records detailed daily model-training work: how many runs were complet
 | Period | Completed top-level training runs | Effective training/runtime | Main outcome |
 |---|---:|---:|---|
 | 2026-08-03 to 2026-08-06 | 50 | About 13h 22m 32s | Built Block Blast baselines, ablations, trajectory experiments, Mahjong C8, full CatBoost/rank-target experiments. |
-| 2026-08-07 | 11 | About 3h 48m 33s | Added Block Crush baseline/optimization, Mahjong C17 challenge model, Block Blast retention/recency/trajectory checks. |
-| Total captured so far | 61 | About 17h 11m 05s | Clear model lineage across Block Blast, Block Crush, and Mahjong Tile. |
+| 2026-08-07 | 18 | About 6h 26m 42s | Added Block Crush baseline/optimization/stability checks, Mahjong C17 challenge model, Block Blast full CatBoost trajectory and growth-interaction checks. |
+| Total captured so far | 68 | About 19h 49m 14s | Clear model lineage across Block Blast, Block Crush, and Mahjong Tile. |
 
 Counting rule: one top-level training task counts once, even if it contains multiple folds, candidates, or sub-models. Failed runs, interrupted runs, calibration-only work, scoring-only work, and report generation are tracked separately.
 
+## 2026-08-10 Shared Scoring / Deployment Update
+
+No new successful model-training run was detected for 2026-08-10 during this sync. The new work is engineering validation, shared-table migration evidence, release packaging, runtime verification, fail-safe testing, and reporting.
+
+| Area | Detail | Outcome |
+|---|---|---|
+| Shared-table schema | Verified `hs_market.ads_game_hourly_value_score_hi` has 17 business columns after adding `distinct_id`; partitions remain `dt/hour/bundle_id`. | `DDL_APPLIED_AND_VERIFIED`; identity columns and partition contract are ready for BB/MJ/BC shared scoring. |
+| Block Blast release | Prepared V2 shared-sink mapping and materialized-tunnel archive for `bb_model006_trajectory_positive_blend_015_20260809_v2`. | BB remote gate passed on an exact `dt=2026-08-07/hour=10/bundle_id=com.block.juggle` partition with 27,362 rows and zero invalid/hash/rank rows. |
+| Mahjong release | Prepared C17 shared-sink `distinct_id` v5 archive for `mahjongtile_c17_probability_only_rank_blend_20260807_v1`. | MJ remote gate passed on `dt=2026-08-05/hour=08/bundle_id=com.nebula.mahjongtile` with 8,041 rows; BB row count stayed unchanged and BC remained empty. |
+| Block Crush release | Upgraded BC shared-hourly release to `BC-V6-SHARED-HOURLY-20260809-R3-HF1`. | Hotfix defaults missing full-population `population_weight` to 1.0, rejects invalid weights, adds LightGBM runtime dependency, and preserves exact-partition write scope. |
+| Unified command | Installed unified DSW command `run run_score.sh --biz_date ... --hour ...`. | Dry-run passed for all three games with `ALL_THREE_MODELS_DRY_RUN_SUCCESS`. |
+| Runtime gate | Real no-publish chain proved the functional path but BB SQL exceeded the 120s SLA. | Fail-safe candidate cancelled the remote BB instance at the SLA boundary, returned `124`, blocked MJ/BC, and wrote nothing to the shared table. |
+| Reporting | Generated weekly algorithm internship report and three-model final-version reports with visual analysis. | Public log records artifact names only; raw internal documents and private data remain local. |
+
+## 2026-08-09 Deployment / Validation Update
+
+No new successful model-training run was detected for 2026-08-09 in the local artifacts scanned during this sync. The new work is deployment packaging and frozen-evaluation preparation for Block Crush V6.
+
+| Area | Detail | Outcome |
+|---|---|---|
+| Block Crush identity lock | Project `block_crush_gp`, package `com.wood.block.sudoku.puzzle.bm`, target `y_ltv_24_72h`. | Prevents accidental BB/Mahjong data, model, encoder, parameter, or calibration mixing. |
+| V10 CatBoost final status | V10 method-transfer training previously completed on 1,872,347 BC rows with 45 BC features in about 45.5 minutes. | V10 is not promoted; locked selection remains `BC_38_locked`, current best release remains BC V6 R2. |
+| V6 development evidence | Aug-01 to Aug-03 diagnostic set: Spearman `0.514552`, NDCG@10% `0.722238`, Top10 revenue capture `82.6369%`, total amount error `4.1688%`, max daily amount error `9.7779%`. | Development gate looks strong but is not treated as final unseen OOT because it participated in V6 safety-factor selection. |
+| Aug-04 frozen OOT | Local SQL, scorer, date guard, bundle guard, and three unit tests are ready. | One-time scoring is deferred until BC receives remote gate access in the BB -> MJ -> BC rollout order. |
+| Shared-hourly release | Prepared `BC-V6-SHARED-HOURLY-20260809-R1` with runner, scoring scripts, DSW preflight/publish scripts, acceptance SQL, release manifest, and SHA256 archive. | Ready for DSW-side verification; writes must target only the exact `dt/hour/bundle_id` BC partition. |
+
 ## 2026-08-07 Detailed Runs
 
-Completed training: 11 runs, about 3h 48m 33s.
+Completed training: 18 runs, about 6h 26m 42s.
 
 | # | Game / Package | Training run | Duration | Change made | Result / improvement | Decision |
 |---:|---|---|---:|---|---|---|
@@ -32,15 +58,22 @@ Completed training: 11 runs, about 3h 48m 33s.
 | 9 | Block Crush / `com.wood.block.sudoku.puzzle.bm` | CatBoost method migration | 12m 09s; effective fitting about 8m 52s | Migrated CatBoost method using only Block Crush data/features. | Final selection still chose BC38; CatBoost did not beat LightGBM baseline. | Method migration rejected for ranking replacement. |
 | 10 | Block Blast / `com.block.juggle` | 211-feature CatBoost trajectory A/B | 16m 31s; fitting 12m 39s | Compared trajectory-enhanced CatBoost with 152-feature baseline. | Positive PR-AUC +`0.003085`, ROC-AUC +`0.002672`; LTV strategy still gave new model weight 0. | Trajectory helps positive classification, not final LTV ordering. |
 | 11 | Block Crush / `com.wood.block.sudoku.puzzle.bm` | Weekday amount model V5 | 1m 48s | Trained 47-feature positive classifier and conditional amount model. | Fresh diagnostic total amount error fell to `5.22%`, but max daily error `10.89%`. | Does not pass daily stability gate. |
+| 12 | Block Blast / `com.block.juggle` | Full-population trajectory positive CatBoost 014 | 1h 31m 01s; fitting about 1h 30m 17s | Trained 211-feature positive CatBoost on the full population with full hourly trajectories. | Frozen selection PR-AUC `0.626720`, Spearman `0.498541`. | Full positive modeling is useful evidence, but does not replace rank-target 002. |
+| 13 | Block Crush / `com.wood.block.sudoku.puzzle.bm` | Weekday V5 seed 20260819 | 40s | Changed random seed to test V5 stability. | Fresh Spearman `0.455039`, total amount error `6.49%`, max daily error `12.44%`. | Shows V5 is seed-sensitive; not promoted. |
+| 14 | Block Crush / `com.wood.block.sudoku.puzzle.bm` | Weekday V5 seed 20260829 | 40s | Ran a second random-seed stability check. | Fresh Spearman `0.452364`, total amount error `4.78%`, max daily error `10.38%`. | Total error improved but daily stability still failed. |
+| 15 | Block Crush / `com.wood.block.sudoku.puzzle.bm` | Tweedie amount V7 | 1m 52s | Tested Tweedie amount objective candidates. | Fresh Spearman fell to `0.421192`, max daily error `15.74%`. | Reject Tweedie as the current amount objective. |
+| 16 | Block Crush / `com.wood.block.sudoku.puzzle.bm` | Recency-weighted V8 | 3m 08s | Tested three time-decay half-lives with classifier and regressor pairs. | Best 7-day half-life still only reached Spearman `0.449429`, max daily error `16.10%`. | Simple recency weighting hurts stability; not promoted. |
+| 17 | Block Blast / `com.block.juggle` | Growth-interaction CatBoost preflight 016 | 15m 17s; fitting about 12m 57s | Expanded to 219 features with growth interactions and higher CTR interaction complexity. | Spearman `0.499093`, candidate weight `0.025`; stability gate failed. | Weak incremental signal exists, but not enough for full promotion. |
+| 18 | Block Crush / `com.wood.block.sudoku.puzzle.bm` | Deep CatBoost V10-R2 | 45m 31s | Trained deeper positive and rank CatBoost models. | Did not beat BC38 after final selection. | Confirms the current bottleneck is not simply model capacity. |
 
 ### 2026-08-07 By Game
 
 | Game | Completed runs | Runtime |
 |---|---:|---:|
-| Block Blast | 6 | 3h 11m 07s |
-| Block Crush | 4 | 21m 35s |
+| Block Blast | 8 | 4h 57m 25s |
+| Block Crush | 9 | 1h 13m 26s |
 | Mahjong Tile | 1 | 15m 51s |
-| Total | 11 | 3h 48m 33s |
+| Total | 18 | 6h 26m 42s |
 
 ### 2026-08-07 Non-Training Work
 
@@ -52,6 +85,9 @@ Completed training: 11 runs, about 3h 48m 33s.
 | Block Crush | Dual-output fresh OOT evaluation | About 11s | Amount error improved to `14.55%`, still above 10% gate. |
 | Block Crush | Amount calibration V4 | About 13s | Amount error improved to `9.87%`; treated as diagnostic because the batch had already been observed. |
 | Block Crush | Online candidate V6 | About 9s | Spearman `0.514552`, amount error `4.17%`; development gate passed, still needs unseen OOT. |
+| Block Blast | Positive blend 015 | Inference/fusion only | Reused existing models; Spearman reached `0.500463`, +`0.000273` over the previous Block Blast best, but it remains a fusion diagnostic rather than a fresh training run. |
+| Block Crush | Multi-seed robustness check | About 6s | Compared seed stability and found Seed09 V6 remained the most stable; multi-seed ensemble increased daily amount error. |
+| Block Crush | Lag7 Weekday V9 | Reused models | Adjusted calibration and strategy only; improvement was too small, so V6 remained preferred. |
 
 ### 2026-08-07 Failed / Extra Runtime
 
@@ -60,13 +96,15 @@ Completed training: 11 runs, about 3h 48m 33s.
 - Retention-LTV first two attempts totaled about 3m 34s because of label and alignment fixes.
 - Block Crush CatBoost produced models before report failure; postprocessing reused trained models without retraining.
 - Block Blast full trajectory CatBoost first attempt ran about 48m 33s before interruption and restart.
+- Block Crush Deep CatBoost V10 first attempt ran about 10m 07s before interruption; V10-R2 completed successfully.
+- Block Blast full trajectory rank 017 consumed about 1h 30m 07s, but it did not write a model, metrics, or completion marker, so it is tracked as incomplete rather than successful.
 
 ### 2026-08-07 Final State
 
 - Mahjong official frozen model remains C8; C17 is the latest challenge model.
 - Block Blast best Spearman remains rank-target 002 at `0.500190`.
 - Block Crush ranking baseline remains BC38; V6 is a development-stage online candidate.
-- Retention, recency, stacker, and direct trajectory-hurdle directions did not stably improve final LTV ranking.
+- Retention, recency, stacker, direct trajectory-hurdle, Tweedie amount, and deep-capacity directions did not stably improve final promotion decisions.
 
 ## 2026-08-03 to 2026-08-06 Daily Detail
 
