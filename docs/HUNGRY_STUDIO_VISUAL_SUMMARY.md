@@ -1,6 +1,6 @@
 # Hungry Studio Internship Visual Summary
 
-Last synced: 2026-08-10 14:06 Asia/Shanghai
+Last synced: 2026-08-10 20:01 Asia/Shanghai
 
 This page visualizes public-safe Hungry Studio internship outcomes from 2026-07-21 onward. It uses summaries and artifact categories only; raw company data and sensitive implementation details are not published.
 
@@ -33,6 +33,8 @@ gantt
     BC V6 shared-hourly release                  :active, 2026-08-09, 1d
     Shared 17-column scoring contract            :active, 2026-08-09, 2d
     Unified BB / MJ / BC command verification    :active, 2026-08-10, 1d
+    BB single-reducer release packaging          :active, 2026-08-10, 1d
+    Three-game workbook validation               :active, 2026-08-10, 1d
     GitHub profile auto-sync                     :active, 2026-08-07, 4d
 ```
 
@@ -45,8 +47,8 @@ pie showData
     "Feature engineering specs" : 12
     "Model evaluation reports" : 25
     "Visualization reports" : 10
-    "Deployment packages" : 8
-    "Work logs and documentation" : 13
+    "Deployment packages" : 11
+    "Work logs and documentation" : 17
 ```
 
 ## Training Run Volume
@@ -80,7 +82,9 @@ flowchart LR
     E --> F["OOT validation"]
     F --> G["Model variant comparison"]
     G --> H["Scoring package and SQL hotfix"]
-    H --> I["Public work-log deployment"]
+    H --> I["Scratch-table and single-reducer safety gate"]
+    I --> J["Three-game workbook validation"]
+    J --> K["Public work-log deployment"]
 ```
 
 ## Work Content vs Work Output
@@ -94,6 +98,9 @@ flowchart LR
 | Deployment | Prepared MahjongTile hourly scoring package, model manifests, SQL hotfixes, and deployment archives. | `mahjongtile_hourly_model`, C17 deploy update archive, C17 SQL hotfix archive. |
 | Shared scoring | Packaged Block Crush V6 for the shared three-game hourly value table with exact partition protection. | `BC-V6-SHARED-HOURLY-20260809-R1`, DSW rollout notes, acceptance SQL, release manifest. |
 | Unified runtime | Verified 17-column BB/MJ/BC shared-table contract, command format, dry-run path, and fail-safe cancellation. | Shared schema migration evidence, unified command verification JSON, runtime effect JSON, release package index. |
+| BB packaging | Prepared direct-select and single-reducer Block Blast deployment candidates while preserving remote-gate separation. | `bb_model006_v2_single_reducer_direct_select_20260810_v3`, `bb_model006_v2_single_reducer_direct_20260810_v1`, release manifests. |
+| Scratch safety | Converted scratch-admin needs into a minimal-permission handoff with isolated table scope and exact `run_id` partition cleanup. | Scratch handoff docs, 147-column schema contract, privilege-boundary notes. |
+| Workbook validation | Built a visible three-game review workbook and checked identity/rank/formula contracts. | `three_games_combined_visible_20260810.xlsx`, validation JSON, acceptance screenshots. |
 | Profile sync | Maintained public GitHub profile logs for daily internship work. | `README.md`, `DAILY_WORK_LOG.md`, internship log, visual summary, scheduled sync task. |
 
 ## Shared Deployment Gate Snapshot
@@ -106,6 +113,32 @@ flowchart LR
 | BC R3-HF1 package | Ready | Hotfix package prepared with exact partition scope and runtime dependency guard. |
 | Unified command dry-run | Passed | BB, MJ, and BC dry-run paths all succeeded. |
 | Unified real no-publish SLA | Blocked safely | BB SQL exceeded the 120s SLA; fail-safe cancelled remote execution and prevented writes. |
+| BB direct-select package | Ready | `bb_model006_v2_single_reducer_direct_select_20260810_v3` is ready for DSW upload after local packaging validation; compressed checksum `3ef72bfe7537c3280864abf6f90e7f2b2c5359b6bb24c5556c83f5fbbe1cdfda` is tracked. |
+| BB single-reducer candidate | Pending remote gate | `bb_model006_v2_single_reducer_direct_20260810_v1` is local-verified; promotion waits for remote validation. |
+| Scratch-table handoff | Ready | Uses isolated scratch table, authoritative 147-column schema, exact `run_id` partition cleanup, and no shared-table mutation privilege. |
+| Three-game workbook | Passed | 40,331 total rows; BB 27,362 / MJ 8,041 / BC 4,928; all identity contracts pass and formula errors are 0. |
+
+## Three-Game Workbook Distribution
+
+```mermaid
+xychart-beta
+    title "Validated rows in combined review workbook"
+    x-axis ["BB", "MJ", "BC"]
+    y-axis "Rows" 0 --> 28000
+    bar [27362, 8041, 4928]
+```
+
+## Evening Deployment Gate Flow
+
+```mermaid
+flowchart LR
+    A["BB model version frozen"] --> B["Direct-select package ready"]
+    A --> C["Single-reducer candidate local verified"]
+    C --> D["Remote gate pending"]
+    B --> E["DSW upload ready"]
+    F["Scratch schema handoff"] --> G["Isolated run_id partition cleanup"]
+    H["Three-game workbook"] --> I["Identity contracts passed"]
+```
 
 ## 2026-08-07 Model Training Snapshot
 
@@ -135,6 +168,9 @@ quadrantChart
     "BC V6 shared-hourly release": [0.86, 0.74]
     "Shared scoring contract": [0.90, 0.80]
     "Unified command fail-safe": [0.72, 0.86]
+    "BB direct-select package": [0.88, 0.78]
+    "Scratch safety handoff": [0.84, 0.76]
+    "Combined workbook validation": [0.86, 0.72]
     "GitHub profile sync": [0.82, 0.55]
     "2026-08-07 training log": [0.76, 0.92]
 ```
