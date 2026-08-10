@@ -83,7 +83,7 @@ If asked "which project is your strongest?", I will start from **short-video rec
 
 I keep a running public work log for Hungry Studio internship deliverables from 2026-07-21 onward:
 
-- Latest sync: 2026-08-10 20:01 Asia/Shanghai, including BB direct-select packaging, scratch-table handoff, and three-game workbook validation.
+- Latest sync: 2026-08-10 20:01 Asia/Shanghai, including BB direct-select packaging, scratch-table handoff, three-game workbook validation, and evening deployment-gate visuals.
 - Latest index: [Daily Work Log](docs/DAILY_WORK_LOG.md)
 - Internship log: [Hungry Studio Internship Log](docs/HUNGRY_STUDIO_INTERNSHIP_LOG.md)
 - Visual summary: [Hungry Studio Internship Visual Summary](docs/HUNGRY_STUDIO_VISUAL_SUMMARY.md)
