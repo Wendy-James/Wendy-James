@@ -1,6 +1,6 @@
 # Hungry Studio Internship Visual Summary
 
-Last synced: 2026-08-07 17:45 Asia/Shanghai
+Last synced: 2026-08-10 14:06 Asia/Shanghai
 
 This page visualizes public-safe Hungry Studio internship outcomes from 2026-07-21 onward. It uses summaries and artifact categories only; raw company data and sensitive implementation details are not published.
 
@@ -26,11 +26,14 @@ gantt
 
     section Modeling
     MahjongTile model variants and SHAP reports  :active, 2026-08-04, 4d
-    BC / BB / MJ full-data training              :active, 2026-08-07, 1d
+    BC / BB / MJ full-data training              :done, 2026-08-07, 1d
 
     section Deployment
     Scoring package and SQL hotfix archives      :active, 2026-08-07, 1d
-    GitHub profile auto-sync                     :active, 2026-08-07, 1d
+    BC V6 shared-hourly release                  :active, 2026-08-09, 1d
+    Shared 17-column scoring contract            :active, 2026-08-09, 2d
+    Unified BB / MJ / BC command verification    :active, 2026-08-10, 1d
+    GitHub profile auto-sync                     :active, 2026-08-07, 4d
 ```
 
 ## Deliverable Mix
@@ -40,10 +43,30 @@ pie showData
     title Public deliverable categories
     "SQL and DataWorks audits" : 14
     "Feature engineering specs" : 12
-    "Model evaluation reports" : 18
+    "Model evaluation reports" : 25
     "Visualization reports" : 10
-    "Deployment packages" : 4
-    "Work logs and documentation" : 8
+    "Deployment packages" : 8
+    "Work logs and documentation" : 13
+```
+
+## Training Run Volume
+
+```mermaid
+xychart-beta
+    title "Completed top-level training runs"
+    x-axis ["08-03", "08-04", "08-05", "08-06", "08-07"]
+    y-axis "Runs" 0 --> 22
+    bar [9, 11, 20, 10, 18]
+```
+
+## Training Runtime
+
+```mermaid
+xychart-beta
+    title "Effective training/runtime by day"
+    x-axis ["08-03", "08-04", "08-05", "08-06", "08-07"]
+    y-axis "Hours" 0 --> 7
+    bar [5.43, 1.06, 1.04, 5.85, 6.45]
 ```
 
 ## Modeling Iteration Map
@@ -69,7 +92,29 @@ flowchart LR
 | Modeling | Compared model variants across ranking, amount prediction, device hierarchy, CPI/manufacturer/RAM, and country/device/carrier settings. | Metrics CSVs, feature importance, SHAP-style reports, robustness checks, holdout predictions. |
 | Visualization | Built readable HTML/PDF/PNG summaries for audits, feature behavior, OOT maturity, ablation, and final model effect. | Visual reports, comparison charts, full-stage workflow summary PDFs. |
 | Deployment | Prepared MahjongTile hourly scoring package, model manifests, SQL hotfixes, and deployment archives. | `mahjongtile_hourly_model`, C17 deploy update archive, C17 SQL hotfix archive. |
+| Shared scoring | Packaged Block Crush V6 for the shared three-game hourly value table with exact partition protection. | `BC-V6-SHARED-HOURLY-20260809-R1`, DSW rollout notes, acceptance SQL, release manifest. |
+| Unified runtime | Verified 17-column BB/MJ/BC shared-table contract, command format, dry-run path, and fail-safe cancellation. | Shared schema migration evidence, unified command verification JSON, runtime effect JSON, release package index. |
 | Profile sync | Maintained public GitHub profile logs for daily internship work. | `README.md`, `DAILY_WORK_LOG.md`, internship log, visual summary, scheduled sync task. |
+
+## Shared Deployment Gate Snapshot
+
+| Gate | Status | Public-safe result |
+|---|---|---|
+| Shared schema migration | Passed | `distinct_id` added as the 17th business column; `dt/hour/bundle_id` partitions unchanged. |
+| BB remote gate V2 | Passed | 27,362 rows; unique IDs and hashes match; rank and value checks pass. |
+| MJ remote gate V2 | Passed | 8,041 rows; BB partition unchanged; BC partition not written yet. |
+| BC R3-HF1 package | Ready | Hotfix package prepared with exact partition scope and runtime dependency guard. |
+| Unified command dry-run | Passed | BB, MJ, and BC dry-run paths all succeeded. |
+| Unified real no-publish SLA | Blocked safely | BB SQL exceeded the 120s SLA; fail-safe cancelled remote execution and prevented writes. |
+
+## 2026-08-07 Model Training Snapshot
+
+| Game | Completed runs | Runtime | Main signal |
+|---|---:|---:|---|
+| Block Blast | 8 | 4h 57m 25s | Full CatBoost rank/positive, trajectory, retention, recency, stacker, and growth-interaction checks. |
+| Block Crush | 9 | 1h 13m 26s | LightGBM baseline, seed stability, Tweedie, recency weighting, weekday amount, CatBoost migration, and deep-capacity checks. |
+| Mahjong Tile | 1 | 15m 51s | C17 trajectory challenge model; C8 remains the official frozen baseline until fresh OOT validation. |
+| Total | 18 | 6h 26m 42s | Successful runs are separated from interrupted, failed, scoring-only, and calibration-only work. |
 
 ## Readable Progress Snapshot
 
@@ -87,7 +132,11 @@ quadrantChart
     "Block Blast GP final reports": [0.78, 0.86]
     "MahjongTile model variants": [0.70, 0.88]
     "C17 scoring package": [0.88, 0.68]
+    "BC V6 shared-hourly release": [0.86, 0.74]
+    "Shared scoring contract": [0.90, 0.80]
+    "Unified command fail-safe": [0.72, 0.86]
     "GitHub profile sync": [0.82, 0.55]
+    "2026-08-07 training log": [0.76, 0.92]
 ```
 
 ## Public Boundary
