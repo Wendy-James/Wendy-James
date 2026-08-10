@@ -1,6 +1,6 @@
 # Daily Work Log
 
-Last synced: 2026-08-10 14:06 Asia/Shanghai
+Last synced: 2026-08-10 20:01 Asia/Shanghai
 
 This page is a public-facing index of Codex-assisted Hungry Studio internship outcomes from 2026-07-21 onward. It summarizes deliverables and keeps sensitive raw files out of the profile repository unless they are explicitly prepared for public release.
 
@@ -34,6 +34,10 @@ For the internship-specific version, see [Hungry Studio Internship Log](HUNGRY_S
 - Shared-table contract: verified the 17-column schema migration for `hs_market.ads_game_hourly_value_score_hi`, including `distinct_id`, `sample_key_hash`, `app_name`, and unchanged `dt/hour/bundle_id` partitions.
 - Release updates: recorded Block Blast V2 materialized tunnel archive, Mahjong C17 shared-sink v5 archive, and Block Crush R3-HF1 hotfix release package.
 - Runtime validation: dry-run command passed for all three games; real no-publish chain exposed BB SQL SLA failure, so fail-safe cancellation blocked MJ/BC and prevented shared-table writes.
+- Evening deployment work: prepared Block Blast single-reducer and direct-select release packages, including `bb_model006_v2_single_reducer_direct_select_20260810_v3`, now marked `READY_FOR_DSW_UPLOAD`.
+- Scratch-table safety: documented isolated scratch-table handoff with exact `run_id` partition cleanup, 147-column historical schema alignment, and no shared-table mutation privilege.
+- Combined workbook validation: produced `three_games_combined_visible_20260810.xlsx` with 40,331 rows across BB 27,362 / MJ 8,041 / BC 4,928; all identity contracts passed and formula error count was 0.
+- Reporting outputs: added editable weekly/work-summary and three-model summary documents, including `8.3-8.9工作总结.docx`, `三个小时价值模型目标梳理_数据分析师简版_20260810.pdf`, and `最终版本—总结.pdf`.
 
 ## 2026-08-05
 
