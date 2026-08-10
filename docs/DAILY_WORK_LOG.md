@@ -1,21 +1,44 @@
 # Daily Work Log
 
-Last synced: 2026-08-07 17:35 Asia/Shanghai
+Last synced: 2026-08-10 14:06 Asia/Shanghai
 
 This page is a public-facing index of Codex-assisted Hungry Studio internship outcomes from 2026-07-21 onward. It summarizes deliverables and keeps sensitive raw files out of the profile repository unless they are explicitly prepared for public release.
 
-For the internship-specific version, see [Hungry Studio Internship Log](HUNGRY_STUDIO_INTERNSHIP_LOG.md). For charts and visual analysis, see [Hungry Studio Internship Visual Summary](HUNGRY_STUDIO_VISUAL_SUMMARY.md).
+For the internship-specific version, see [Hungry Studio Internship Log](HUNGRY_STUDIO_INTERNSHIP_LOG.md). For charts and visual analysis, see [Hungry Studio Internship Visual Summary](HUNGRY_STUDIO_VISUAL_SUMMARY.md). For detailed model counts, duration, changes, and improvements, see [Model Training Run Log](MODEL_TRAINING_RUN_LOG.md).
 
 ## 2026-08-07
 
 - Hungry Studio internship: continued Block Blast GP / MahjongTile / BC full-data modeling and deployment packaging.
+- Model training detail: completed 18 training runs, about 6h 26m 42s; see the model run log for per-run changes, durations, metrics, and decisions.
+- Final 8/7 update: added Block Blast full-population trajectory positive CatBoost, growth-interaction preflight, Block Crush seed stability, Tweedie, recency, and deep CatBoost checks.
 - GitHub profile sync: confirmed the GitHub account `Wendy-James` and prepared a recurring sync workflow for daily work outcomes.
 - Feature engineering model work: continued Block Blast GP / Mahjong / BC full-data model training and comparison tasks.
 - Local cleanup: scanned desktop and project files for redundant or unused files.
 
+## 2026-08-08
+
+- Scheduled sync check: no new public-ready local artifact detected after the finalized 2026-08-07 model-training summary.
+- Maintenance: kept the GitHub profile automation active for three daily updates and preserved the rule that newly discussed work content, outputs, model-training details, and visualization needs are included in the next sync.
+
+## 2026-08-09
+
+- Hungry Studio internship: packaged the Block Crush V6 shared-hourly adapter for the three-game shared output table.
+- Work output: prepared release `BC-V6-SHARED-HOURLY-20260809-R1`, including scoring scripts, DSW preflight/publish scripts, acceptance SQL, shared-contract documentation, release manifest, and SHA256 archive.
+- Validation summary: confirmed BC project identity `block_crush_gp / com.wood.block.sudoku.puzzle.bm`, target `y_ltv_24_72h`, 45 BC-only features, no cross-game data mixing, and V10 CatBoost non-promotion.
+- Deployment gate: Aug-04 frozen OOT SQL/scorer/test chain is locally ready, but remote MaxCompute/OSS execution is deferred by the BB -> MJ -> BC rollout order.
+
+## 2026-08-10
+
+- Hungry Studio internship: consolidated the three-game hourly value scoring contract and unified DSW command path for Block Blast, Mahjong Tile, and Block Crush.
+- Work output: generated weekly algorithm internship report PDF and three-model final-version reports, including framework and metric-context visualizations.
+- Shared-table contract: verified the 17-column schema migration for `hs_market.ads_game_hourly_value_score_hi`, including `distinct_id`, `sample_key_hash`, `app_name`, and unchanged `dt/hour/bundle_id` partitions.
+- Release updates: recorded Block Blast V2 materialized tunnel archive, Mahjong C17 shared-sink v5 archive, and Block Crush R3-HF1 hotfix release package.
+- Runtime validation: dry-run command passed for all three games; real no-publish chain exposed BB SQL SLA failure, so fail-safe cancellation blocked MJ/BC and prevented shared-table writes.
+
 ## 2026-08-05
 
 - Hungry Studio internship: ran MahjongTile modeling variants and ML-SHAP-style evaluations.
+- Model training detail: part of the 2026-08-03 to 2026-08-06 block with 50 completed top-level runs and about 13h 22m 32s total runtime.
 - Model comparison: compared model performance across parallel Codex tasks, focusing on accuracy, stability, and multi-dimensional capability.
 
 ## 2026-08-03
