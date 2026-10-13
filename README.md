@@ -1,100 +1,54 @@
-# Wendy Zhan / 詹文婷
+# Wendy Zhan (詹文婷)
 
-**Algorithm Intern Candidate | Recommendation / Search Retrieval / Ranking | PyTorch + Faiss | Offline Evaluation / Negative Sampling / Badcase Analysis**
+**Foundation Models · LLM Post-training · ML Research Engineering**  
+B.Sc. in Information and Computing Science, Hefei University of Technology (2026)
 
-HFUT 211 · Information and Computing Science  
-Incoming MSc Computer Science Admit  
-Focus: Recommendation / Retrieval / Ranking / Offline Evaluation
+I'm interested in understanding **how models are trained, evaluated, and improved**, from reproducible systems components to verifiable reasoning experiments. My work emphasizes *correctness, measured trade-offs, and inspectable evidence* over broad technology claims.
 
-I build reproducible algorithm projects around recommendation/search retrieval, ranking evaluation, and content understanding. The featured repositories keep clear scenarios, data schemas, runnable scripts, experiment tables, badcase records, and data-boundary notes.
+[中文简介](README.zh-CN.md) · [GitHub](https://github.com/Wendy-James) · [Email](mailto:1563887189@qq.com)
 
-**Target roles:** Recommendation Algorithm Intern · Search/Recommendation Intern · Content Recommendation Intern · Machine Learning Intern
+---
 
-<p>
-  <a href="https://github.com/Wendy-James"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Wendy--James-24292f?style=flat-square&logo=github&logoColor=white"></a>
-  <a href="https://Wendy-James.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-GitHub%20Pages-0969da?style=flat-square"></a>
-  <a href="mailto:1563887189@qq.com"><img alt="Email" src="https://img.shields.io/badge/Email-1563887189%40qq.com-0f766e?style=flat-square"></a>
-</p>
+## Research & engineering
 
-## Focus
+### 01 · [WendyFM — foundation-model training from first principles](https://github.com/Wendy-James/wendy-foundation-model)
 
-I focus on **recommendation / search / retrieval**:
+Building an educational, from-scratch language-model training stack, one reproducible milestone at a time.
 
-1. **Short-video recommendation:** Two-Tower recall, Faiss TopK, time split, Recall@K / NDCG@K, ablation and leakage check.
-2. **E-commerce multimodal retrieval:** CLIP-style image-text retrieval, hard negatives, SKU conflict and OCR-noise badcases.
-3. **RAG retrieval evaluation:** BM25 + Dense + Reranker, evidence citation, no-answer control and chunk ablation.
+**Completed: byte-level BPE tokenizer**
+- Implemented deterministic byte-level BPE with special-token handling and multilingual pre-tokenization.
+- Checked *exact equality* between naive and indexed training outputs before benchmarking.
+- In small **synthetic CPU benchmarks**, the indexed trainer reached **7.25×** naive speed on English, **4.55×** on code, and **4.57×** on mixed text, but only **0.70×** on Chinese and with higher measured Python allocations.
+- **Evidence:** [technical report](https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md) · [benchmark CSV](https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv) · [source repository](https://github.com/Wendy-James/wendy-foundation-model)
 
-## Featured Projects
+**Next milestones (planned, not yet completed):** decoder-only Transformer, training loop and evaluation, attention and GPU profiling, and scaling experiments.
 
-| Order | Repository | Keywords | Evidence / metrics | Scope |
-|---|---|---|---|---|
-| 1 | [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50 | `data_schema.md`, `experiments/metrics.csv`, `experiments/ablation.csv`, `badcases/badcase_samples.csv`; Recall@50 `0.112 -> 0.126`, NDCG@50 `0.071 -> 0.079` | Offline recall evaluation |
-| 2 | [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | CLIP-style Retrieval / Hard Negative / SKU Conflict / Faiss / Badcase Analysis | `data_schema.md`, `experiments.csv`, `badcases.csv`; SKU conflict buckets, OCR noise cases, threshold review | E-commerce retrieval evaluation |
-| 3 | [llm-rag-system](https://github.com/Wendy-James/llm-rag-system) | BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation | `docs/data_schema.md`, `experiments/retrieval_metrics.csv`, `experiments/chunk_size_ablation.csv`, `badcases/error_analysis.csv`; Recall@5 `0.71 -> 0.77` | Retrieval-evaluation supplement |
+### 02 · LLM post-training & RL trainability — research in progress
 
-## Repository Focus
+Exploring **data selection × supervised fine-tuning × verifiable rewards / evaluation**: which examples and verification choices might lead to useful learning under a fixed compute budget?
 
-The profile should be scanned through these pinned repositories, in this order:
+- Current emphasis: rigorous math-answer extraction, verifier agreement, difficulty profiling, and experimental controls.
+- Research code is **private** while the study is underway. No publication, publicly reproducible RL result, or completed large-scale training is claimed here.
+- Public methods, results, or code will be linked **only after verification and release review**.
 
-1. `short-video-recsys-reproduce`
-2. `ecommerce-multimodal-retrieval`
-3. `llm-rag-system`
-4. `recommendation-system`
-5. `transformer-model-lab`
-6. `open-source-reading-notes`
+## Selected public projects
 
-This profile is intentionally organized around recommendation/search/retrieval evidence. Please scan the pinned repositories in the order above.
+| Project | Focus | What the public repository actually demonstrates |
+| --- | --- | --- |
+| **[WendyFM](https://github.com/Wendy-James/wendy-foundation-model)** | Tokenization and foundation-model systems | Completed tokenizer milestone, differential checks, measured gains *and regressions* |
+| [Short-video recommender reproduction](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower retrieval, negative sampling, temporal validation | Reproducible **offline** evaluation on pseudo/anonymized data; no online A/B claims |
+| [Multimodal product retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | Image–text retrieval and hard-negative analysis | Offline retrieval experiments, SKU/OCR failure cases |
+| [RAG retrieval evaluation](https://github.com/Wendy-James/llm-rag-system) | BM25, dense retrieval, reranking, ablation | A supporting evaluation project, **not** evidence of LLM pretraining |
 
-## Main Interview Story
+## How I approach research
 
-If asked "which project is your strongest?", I will start from **short-video recommendation reproduction**:
+**Question → baseline → implementation → tests → controlled experiments → limitations.**
 
-1. **Scenario:** a recommendation recall module needs to retrieve candidate videos from exposure-level logs before ranking.
-2. **Data口径:** pseudo/public-field schema inspired by KuaiRec/KuaiRand/Tenrec: user, item/video, exposure, click, finish, like, favorite, dwell time, author, category, timestamp.
-3. **Split:** 7-day train / 1-day validation time split; random split is recorded only as a leakage-risk comparison.
-4. **Model:** Two-Tower/DSSM recall baseline with user history, category preference, author interaction, item/category/author embeddings, and time features.
-5. **Retrieval:** Faiss-style `IndexFlatIP` top-k retrieval for offline scale.
-6. **Metrics:** Recall@50, NDCG@50, AUC, tail Recall@50, plus ablation and badcase analysis.
+I prefer to reuse and credit mature open-source work, check licenses and reproducibility, and measure changes before claiming improvements. Negative results and failure modes belong alongside successful experiments.
 
-## Skills That Match The Evidence
+My longer-term interests include **foundation-model research, training infrastructure, and translating research into useful AI systems**. These are directions of interest—not achievements or company affiliations.
 
-| Area | Concrete evidence |
-|---|---|
-| Recommendation / Search | Two-Tower, DSSM, negative sampling, time split, Faiss, Recall@K, NDCG@K |
-| Ranking / Evaluation | AUC, LogLoss, feature crossing, ablation records, leakage checks, tail recall |
-| Multimodal Retrieval | CLIP dual encoder, hard negative mining, SKU conflict analysis, OCR-noise false positives |
-| RAG Retrieval Support | BM25, dense retrieval, RRF, reranker, chunk-size ablation, citation hit rate |
-| Engineering | Python, PyTorch-style training scripts, SQL/data schema thinking, Git, Linux, reproducible experiment logs |
+---
 
-## Data Boundary
-
-- No private company data is published.
-- No online ownership or production A/B lift is claimed.
-- RAG is a retrieval-evaluation supplement, not my main large-model training direction.
-- The profile is intentionally narrowed to **recommendation/search/content retrieval** for algorithm internship interviews.
-
-## Core Links
-
-- Short-video recommendation: [short-video-recsys-reproduce](https://github.com/Wendy-James/short-video-recsys-reproduce)
-- E-commerce retrieval: [ecommerce-multimodal-retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval)
-- Retrieval-evaluation supplement: [llm-rag-system](https://github.com/Wendy-James/llm-rag-system)
-
-## Daily Work Sync
-
-I keep a running public work log for Hungry Studio internship deliverables from 2026-07-21 onward:
-
-- Latest sync: 2026-08-10 20:01 Asia/Shanghai, including BB direct-select packaging, scratch-table handoff, three-game workbook validation, and evening deployment-gate visuals.
-- Latest index: [Daily Work Log](docs/DAILY_WORK_LOG.md)
-- Internship log: [Hungry Studio Internship Log](docs/HUNGRY_STUDIO_INTERNSHIP_LOG.md)
-- Visual summary: [Hungry Studio Internship Visual Summary](docs/HUNGRY_STUDIO_VISUAL_SUMMARY.md)
-- Model run log: [Model Training Run Log](docs/MODEL_TRAINING_RUN_LOG.md)
-- Sync target: this GitHub profile repository
-- Cadence: three scheduled sync checks per day
-- Boundary: summaries and prepared artifact indexes only; raw private files are not published by default
-
-## GitHub Stats
-
-<p>
-  <img height="165" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Wendy-James&show_icons=true&hide_border=true&theme=default">
-  <img height="165" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wendy-James&layout=compact&hide_border=true&theme=default">
-</p>
+**Research/engineering discussions:** [Email me](mailto:1563887189@qq.com).  
+*Public projects use shareable or synthetic data. No employer code, internal datasets, private metrics, or credentials are intentionally published.*
