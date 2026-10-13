@@ -5,7 +5,7 @@ B.Sc. in Information and Computing Science, Hefei University of Technology (2026
 
 I'm interested in understanding **how models are trained, evaluated, and improved**, from reproducible systems components to verifiable reasoning experiments. My work emphasizes *correctness, measured trade-offs, and inspectable evidence* over broad technology claims.
 
-[GitHub](https://github.com/Wendy-James) · [Email](mailto:1563887189@qq.com)
+[中文简介](README.zh-CN.md) · [GitHub](https://github.com/Wendy-James) · [Email](mailto:1563887189@qq.com)
 
 ---
 
