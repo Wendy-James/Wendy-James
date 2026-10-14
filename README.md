@@ -36,7 +36,7 @@ B.Sc. Information and Computing Science · Hefei University of Technology · 202
 
 [**Code**](https://github.com/Wendy-James/wendy-foundation-model) · [**Benchmark report**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md) · [**Measurements (CSV)**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv) · [**Reproduction steps**](https://github.com/Wendy-James/wendy-foundation-model#reproduce-the-tokenizer-milestone)
 
-**Next (planned, not completed):** decoder-only Transformer, end-to-end training/evaluation baseline, GPU and attention profiling, scaling experiments.
+**Next (not yet completed):** [Decoder-only Transformer engineering draft — PR #24](https://github.com/Wendy-James/wendy-foundation-model/pull/24) has passed isolated toy CPU smoke tests and awaits owner review, environment reproducibility checks, and real training/evaluation. GPU/attention profiling and scaling remain planned.
 
 ### 02 / Post-Training and RL Trainability Research
 
@@ -60,4 +60,4 @@ Industry experience informs my engineering approach, but **employer-owned data, 
 
 ---
 
-**Interested in discussing foundation models, training systems, reproducible evaluation, or research engineering?** [Get in touch →](mailto:1563887189@qq.com)
+[Responsible publication policy](PUBLICATION_POLICY.md) · **Interested in discussing foundation models, training systems, reproducible evaluation, or research engineering?** [Get in touch →](mailto:1563887189@qq.com)
