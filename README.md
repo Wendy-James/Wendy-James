@@ -1,54 +1,63 @@
-# Wendy Zhan (詹文婷)
+<div align="center">
 
-**Foundation Models · LLM Post-training · ML Research Engineering**  
-B.Sc. in Information and Computing Science, Hefei University of Technology (2026)
+# Wendy Zhan / 詹文婷
 
-I'm interested in understanding **how models are trained, evaluated, and improved**, from reproducible systems components to verifiable reasoning experiments. My work emphasizes *correctness, measured trade-offs, and inspectable evidence* over broad technology claims.
+**Foundation Model Systems · LLM Post-training · ML Research Engineering**
 
-[中文简介](README.zh-CN.md) · [Portfolio](https://wendy-james.github.io/) · [GitHub](https://github.com/Wendy-James) · [Email](mailto:1563887189@qq.com)
+Building and evaluating model systems from first principles — with reproducible experiments, measured trade-offs, and honest failure analysis.
 
----
+B.Sc. Information and Computing Science · Hefei University of Technology · 2026
 
-## Research & engineering
+[**Research portfolio ↗**](https://wendy-james.github.io/) &nbsp;·&nbsp; [中文](README.zh-CN.md) &nbsp;·&nbsp; [Email](mailto:1563887189@qq.com)
 
-### 01 · [WendyFM — foundation-model training from first principles](https://github.com/Wendy-James/wendy-foundation-model)
-
-Building an educational, from-scratch language-model training stack, one reproducible milestone at a time.
-
-**Completed: byte-level BPE tokenizer**
-- Implemented deterministic byte-level BPE with special-token handling and multilingual pre-tokenization.
-- Checked *exact equality* between naive and indexed training outputs before benchmarking.
-- In small **synthetic CPU benchmarks**, the indexed trainer reached **7.25×** naive speed on English, **4.55×** on code, and **4.57×** on mixed text, but only **0.70×** on Chinese and with higher measured Python allocations.
-- **Evidence:** [technical report](https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md) · [benchmark CSV](https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv) · [source repository](https://github.com/Wendy-James/wendy-foundation-model)
-
-**Next milestones (planned, not yet completed):** decoder-only Transformer, training loop and evaluation, attention and GPU profiling, and scaling experiments.
-
-### 02 · LLM post-training & RL trainability — research in progress
-
-Exploring **data selection × supervised fine-tuning × verifiable rewards / evaluation**: which examples and verification choices might lead to useful learning under a fixed compute budget?
-
-- Current emphasis: rigorous math-answer extraction, verifier agreement, difficulty profiling, and experimental controls.
-- Research code is **private** while the study is underway. No publication, publicly reproducible RL result, or completed large-scale training is claimed here.
-- Public methods, results, or code will be linked **only after verification and release review**.
-
-## Selected public projects
-
-| Project | Focus | What the public repository actually demonstrates |
-| --- | --- | --- |
-| **[WendyFM](https://github.com/Wendy-James/wendy-foundation-model)** | Tokenization and foundation-model systems | Completed tokenizer milestone, differential checks, measured gains *and regressions* |
-| [Short-video recommender reproduction](https://github.com/Wendy-James/short-video-recsys-reproduce) | Two-Tower retrieval, negative sampling, temporal validation | Reproducible **offline** evaluation on pseudo/anonymized data; no online A/B claims |
-| [Multimodal product retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) | Image–text retrieval and hard-negative analysis | Offline retrieval experiments, SKU/OCR failure cases |
-| [RAG retrieval evaluation](https://github.com/Wendy-James/llm-rag-system) | BM25, dense retrieval, reranking, ablation | A supporting evaluation project, **not** evidence of LLM pretraining |
-
-## How I approach research
-
-**Question → baseline → implementation → tests → controlled experiments → limitations.**
-
-I prefer to reuse and credit mature open-source work, check licenses and reproducibility, and measure changes before claiming improvements. Negative results and failure modes belong alongside successful experiments.
-
-My longer-term interests include **foundation-model research, training infrastructure, and translating research into useful AI systems**. These are directions of interest—not achievements or company affiliations.
+</div>
 
 ---
 
-**Research/engineering discussions:** [Email me](mailto:1563887189@qq.com).  
-*Public projects use shareable or synthetic data. No employer code, internal datasets, private metrics, or credentials are intentionally published.*
+## Currently building
+
+| Track | Current focus | Public status |
+| :--- | :--- | :--- |
+| **Foundation model systems** | Tokenizer → Transformer → training & systems | [WendyFM: tokenizer milestone completed](https://github.com/Wendy-James/wendy-foundation-model) |
+| **Post-training research** | Verifier reliability, mathematical difficulty, SFT-to-RL questions | **Ongoing** · research repository private |
+| **Applied machine learning** | Time-aware evaluation, retrieval, ranking, ablation | [Offline recommendation reproduction](https://github.com/Wendy-James/short-video-recsys-reproduce) |
+
+## Featured engineering evidence
+
+### 01 / [WendyFM — From-Scratch Foundation Model Systems](https://github.com/Wendy-James/wendy-foundation-model)
+
+**Shipped milestone:** a deterministic byte-level BPE tokenizer with two trainers, multilingual correctness tests, and CPU-local benchmarks.
+
+| English | Code | Mixed multilingual | Chinese |
+| :---: | :---: | :---: | :---: |
+| **7.25×** faster | **4.55×** faster | **4.57×** faster | **0.70×** (slower) |
+
+*Indexed trainer vs. naive reference on small synthetic corpora. All specifications matched exactly; indexed training had higher tracked Python allocation peaks. These figures are **not** LLM pretraining, GPU, or production results.*
+
+[**Code**](https://github.com/Wendy-James/wendy-foundation-model) · [**Benchmark report**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md) · [**Measurements (CSV)**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv) · [**Reproduction steps**](https://github.com/Wendy-James/wendy-foundation-model#reproduce-the-tokenizer-milestone)
+
+**Next (planned, not completed):** decoder-only Transformer, end-to-end training/evaluation baseline, GPU and attention profiling, scaling experiments.
+
+### 02 / Post-Training and RL Trainability Research
+
+Exploring how **data selection, difficulty profiling, and answer verification** could influence learning under a fixed compute budget. Current work emphasizes verifier agreement, conservative extraction, and experimental design; SFT/RL findings and publication are **not claimed**.
+
+Research code stays private until validation and release review. This section will be updated only when safe, reproducible findings are ready.
+
+### 03 / [Recommendation Retrieval & Evaluation](https://github.com/Wendy-James/short-video-recsys-reproduce)
+
+A public **offline reproduction** of a Two-Tower/DSSM short-video recall pipeline, with temporal splits, negative sampling, Faiss-style TopK retrieval, ablations, leakage checks, and failure analysis.
+
+Other public evidence: [multimodal retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) · [RAG retrieval evaluation](https://github.com/Wendy-James/llm-rag-system) · [Transformer model lab](https://github.com/Wendy-James/transformer-model-lab).
+
+## Research practice
+
+**Question → baseline → implementation → tests → measured comparison → limitations.**
+
+I prefer mature, properly credited open-source foundations over unnecessary reinvention. I care about correctness, negative results, clear reproduction commands, and practical engineering constraints — not the number of green squares on a contribution chart.
+
+Industry experience informs my engineering approach, but **employer-owned data, internal model artifacts, implementation details, and private metrics are not portfolio content**. Public sample-based experiments are not presented as online business outcomes.
+
+---
+
+**Interested in discussing foundation models, training systems, reproducible evaluation, or research engineering?** [Get in touch →](mailto:1563887189@qq.com)
