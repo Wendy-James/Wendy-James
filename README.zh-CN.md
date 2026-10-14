@@ -1,6 +1,6 @@
 <div align="center">
 
-# 詹文婷 / Wendy Zhan
+# Wendy
 
 **基础模型训练系统 · LLM 后训练 · 机器学习研究工程**
 
