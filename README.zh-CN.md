@@ -36,7 +36,7 @@
 
 [**代码**](https://github.com/Wendy-James/wendy-foundation-model) · [**实验报告**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md) · [**原始测量 CSV**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv) · [**复现说明**](https://github.com/Wendy-James/wendy-foundation-model#reproduce-the-tokenizer-milestone)
 
-**下一阶段（未完成）：** Decoder-only Transformer、训练与评测基线、GPU/Attention profiling、Scaling 实验。
+**下一阶段（尚未完成）：** [Decoder-only Transformer 工程草稿 PR #24](https://github.com/Wendy-James/wendy-foundation-model/pull/24) 已通过独立环境的 Toy CPU 测试，仍待本人复核、依赖和复现环境验证、真实训练与评估。GPU/Attention profiling 和 Scaling 仍属于计划。
 
 ### 02 / Post-Training 与 RL Trainability 研究
 
@@ -60,4 +60,4 @@
 
 ---
 
-**欢迎交流基础模型、训练系统、可复现评估与研究工程。** [联系我 →](mailto:1563887189@qq.com)
+[公开发布与证据核验原则](PUBLICATION_POLICY.md) · **欢迎交流基础模型、训练系统、可复现评估与研究工程。** [联系我 →](mailto:1563887189@qq.com)
