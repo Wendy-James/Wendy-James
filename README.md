@@ -1,6 +1,6 @@
 <div align="center">
 
-# Wendy Zhan / 詹文婷
+# Wendy
 
 **Foundation Model Systems · LLM Post-training · ML Research Engineering**
 
