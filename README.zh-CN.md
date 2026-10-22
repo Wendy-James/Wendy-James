@@ -2,13 +2,13 @@
 
 # Wendy
 
-**基础模型训练系统 · LLM 后训练 · 机器学习研究工程**
+**LLM Post-training × Agentic RL · 基础模型训练系统 · 研究工程**
 
-从底层实现模型系统，用可复现的实验衡量收益、成本与失败案例。
+研究语言模型如何通过可验证反馈、多步决策与工具交互实现持续改进；重视可复现训练、系统工程、严格评估和失败分析。
 
-合肥工业大学 · 信息与计算科学本科 · 2026
+**当前方向：** 可验证奖励、智能体评测与高效模型训练系统。
 
-[**个人研究作品集 ↗**](https://wendy-james.github.io/) &nbsp;·&nbsp; [English](README.md) &nbsp;·&nbsp; [邮箱](mailto:1563887189@qq.com)
+[**研究作品集 ↗**](https://wendy-james.github.io/) &nbsp;·&nbsp; [English](README.md) &nbsp;·&nbsp; [项目索引 ↓](#当前主线)
 
 </div>
 
@@ -19,7 +19,7 @@
 | 方向 | 研究重点 | 公开状态 |
 | :--- | :--- | :--- |
 | **基础模型训练系统** | Tokenizer → Transformer → 训练与系统优化 | [WendyFM：已完成分词器里程碑](https://github.com/Wendy-James/wendy-foundation-model) |
-| **Post-training 研究** | 答案验证器、数学难度分层、SFT-to-RL 问题 | **进行中** · 研究仓库暂为私有 |
+| **Post-training × Agentic RL** | 可验证反馈、工具使用评测、SFT-to-RL 研究问题 | **进行中** · 研究仓库暂为私有 |
 | **工业机器学习** | 时间外评估、召回、排序、消融与排错 | [推荐算法离线复现](https://github.com/Wendy-James/short-video-recsys-reproduce) |
 
 ## 代表性工程证据
@@ -38,9 +38,9 @@
 
 **下一阶段（尚未完成）：** [Decoder-only Transformer 工程草稿 PR #24](https://github.com/Wendy-James/wendy-foundation-model/pull/24) 已通过独立环境的 Toy CPU 测试，仍待本人复核、依赖和复现环境验证、真实训练与评估。GPU/Attention profiling 和 Scaling 仍属于计划。
 
-### 02 / Post-Training 与 RL Trainability 研究
+### 02 / Post-training × Agentic RL 研究
 
-正在探索 **数据选择、难度剖析、数学答案验证**与后续训练结果之间的关系。当前重点为 verifier 一致性、保守答案抽取和受控实验设计，**不宣称完成 SFT/RL 实验、论文发表或取得已验证的研究结论**。
+现阶段关注 **Verifier 一致性、数据选择、数学推理评估与 SFT-to-RL 实验设计**，下一阶段将研究工具调用奖励、多步交互环境与 Agentic RL。上述未来方向**不代表已完成智能体 RL 训练、验证过 RL 性能收益或发表论文**。
 
 研究代码暂为私有，待结果核验且满足公开条件后再发布。
 
@@ -60,4 +60,4 @@
 
 ---
 
-[公开发布与证据核验原则](PUBLICATION_POLICY.md) · **欢迎交流基础模型、训练系统、可复现评估与研究工程。** [联系我 →](mailto:1563887189@qq.com)
+[公开发布与证据核验原则](PUBLICATION_POLICY.md) · **公开代码、实验数据与复现说明已在上方项目中列出。**
