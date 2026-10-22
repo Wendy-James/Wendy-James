@@ -2,13 +2,13 @@
 
 # Wendy
 
-**Foundation Model Systems · LLM Post-training · ML Research Engineering**
+**LLM Post-training × Agentic RL · Foundation Model Systems · Research Engineering**
 
-Building and evaluating model systems from first principles — with reproducible experiments, measured trade-offs, and honest failure analysis.
+Exploring how language-model systems learn from verifiable feedback, multi-step decisions, and tool interaction. I build reproducible training and evaluation pipelines, and document both positive and negative results.
 
-B.Sc. Information and Computing Science · Hefei University of Technology · 2026
+**Current focus:** verifiable rewards, agent evaluation, and efficient model-training workflows.
 
-[**Research portfolio ↗**](https://wendy-james.github.io/) &nbsp;·&nbsp; [中文](README.zh-CN.md) &nbsp;·&nbsp; [Email](mailto:1563887189@qq.com)
+[**Research portfolio ↗**](https://wendy-james.github.io/) &nbsp;·&nbsp; [中文](README.zh-CN.md) &nbsp;·&nbsp; [Selected work ↓](#currently-building)
 
 </div>
 
@@ -19,7 +19,7 @@ B.Sc. Information and Computing Science · Hefei University of Technology · 202
 | Track | Current focus | Public status |
 | :--- | :--- | :--- |
 | **Foundation model systems** | Tokenizer → Transformer → training & systems | [WendyFM: tokenizer milestone completed](https://github.com/Wendy-James/wendy-foundation-model) |
-| **Post-training research** | Verifier reliability, mathematical difficulty, SFT-to-RL questions | **Ongoing** · research repository private |
+| **Post-training × Agentic RL** | Verifiable feedback, tool-use evaluation, SFT-to-RL research questions | **Ongoing** · research repository private |
 | **Applied machine learning** | Time-aware evaluation, retrieval, ranking, ablation | [Offline recommendation reproduction](https://github.com/Wendy-James/short-video-recsys-reproduce) |
 
 ## Featured engineering evidence
@@ -38,9 +38,9 @@ B.Sc. Information and Computing Science · Hefei University of Technology · 202
 
 **Next (not yet completed):** [Decoder-only Transformer engineering draft — PR #24](https://github.com/Wendy-James/wendy-foundation-model/pull/24) has passed isolated toy CPU smoke tests and awaits owner review, environment reproducibility checks, and real training/evaluation. GPU/attention profiling and scaling remain planned.
 
-### 02 / Post-Training and RL Trainability Research
+### 02 / Post-training × Agentic RL Research
 
-Exploring how **data selection, difficulty profiling, and answer verification** could influence learning under a fixed compute budget. Current work emphasizes verifier agreement, conservative extraction, and experimental design; SFT/RL findings and publication are **not claimed**.
+Current investigations cover **verifier reliability, data selection, mathematical reasoning evaluation, and SFT-to-RL experimental design**. Longer-term questions include tool-use rewards, multi-step environments, and agentic RL. These are research directions, **not claims of completed agent training, validated RL gains, or publication**.
 
 Research code stays private until validation and release review. This section will be updated only when safe, reproducible findings are ready.
 
@@ -60,4 +60,4 @@ Industry experience informs my engineering approach, but **employer-owned data, 
 
 ---
 
-[Responsible publication policy](PUBLICATION_POLICY.md) · **Interested in discussing foundation models, training systems, reproducible evaluation, or research engineering?** [Get in touch →](mailto:1563887189@qq.com)
+[Responsible publication policy](PUBLICATION_POLICY.md) · **Public projects, evidence, and reproduction instructions are linked above.**
