@@ -2,62 +2,77 @@
 
 # Wendy
 
-**LLM Post-training × Agentic RL · Foundation Model Systems · Research Engineering**
+### Building verifiable learning systems
 
-Exploring how language-model systems learn from verifiable feedback, multi-step decisions, and tool interaction. I build reproducible training and evaluation pipelines, and document both positive and negative results.
+**LLM Post-training × Agentic RL · Foundation-model Training Systems**
 
-**Current focus:** verifiable rewards, agent evaluation, and efficient model-training workflows.
+Interested in how language-model agents learn from **verifiable feedback, tool interaction, and multi-step environments**. I work toward rigorous post-training experiments backed by reproducible implementations, evaluation protocols, and honest failure analysis.
 
-[**Research portfolio ↗**](https://wendy-james.github.io/) &nbsp;·&nbsp; [中文](README.zh-CN.md) &nbsp;·&nbsp; [Selected work ↓](#currently-building)
+[Research portfolio ↗](https://wendy-james.github.io/) &nbsp;·&nbsp; [中文](README.zh-CN.md) &nbsp;·&nbsp; [Public evidence ↓](#public-engineering-evidence)
 
 </div>
 
 ---
 
-## Currently building
+## Research focus
 
-| Track | Current focus | Public status |
+**North star: Post-training × Agentic Reinforcement Learning.** The goal is to understand how reward quality, verifiers, data recipes, and environment design affect the learning and generalization of tool-using language-model agents.
+
+| Area | Technical questions | Status |
 | :--- | :--- | :--- |
-| **Foundation model systems** | Tokenizer → Transformer → training & systems | [WendyFM: tokenizer milestone completed](https://github.com/Wendy-James/wendy-foundation-model) |
-| **Post-training × Agentic RL** | Verifiable feedback, tool-use evaluation, SFT-to-RL research questions | **Ongoing** · research repository private |
-| **Applied machine learning** | Time-aware evaluation, retrieval, ranking, ablation | [Offline recommendation reproduction](https://github.com/Wendy-James/short-video-recsys-reproduce) |
+| **Verifiable feedback** | Answer extraction, verifier agreement, false rewards, reward hacking | Research in progress; code and intermediate results private |
+| **SFT → RLVR** | Data selection, difficulty, controlled baselines, fixed-compute comparisons | Experiments under investigation; no public RL gain claim |
+| **Tool-using agents** | Multi-step tasks, trajectory-level evaluation, environment feedback | **Planned research direction**, not a shipped agent |
+| **Training systems** | Tokenization, decoder components, testing, optimization and profiling | Public WendyFM evidence below |
 
-## Featured engineering evidence
+These are **research questions and engineering priorities**, not claims of a published paper, completed Agentic RL training, or frontier-model performance.
 
-### 01 / [WendyFM — From-Scratch Foundation Model Systems](https://github.com/Wendy-James/wendy-foundation-model)
+## Public engineering evidence
 
-**Shipped milestone:** a deterministic byte-level BPE tokenizer with two trainers, multilingual correctness tests, and CPU-local benchmarks.
+### 01 / [WendyFM — Foundation-model systems](https://github.com/Wendy-James/wendy-foundation-model)
 
-| English | Code | Mixed multilingual | Chinese |
-| :---: | :---: | :---: | :---: |
-| **7.25×** faster | **4.55×** faster | **4.57×** faster | **0.70×** (slower) |
+A from-scratch training-systems lab organized around **implementation → correctness tests → reproducible measurement → limitations**.
 
-*Indexed trainer vs. naive reference on small synthetic corpora. All specifications matched exactly; indexed training had higher tracked Python allocation peaks. These figures are **not** LLM pretraining, GPU, or production results.*
+**Completed and publicly inspectable:** deterministic byte-level BPE tokenizer; naive and indexed trainers; multilingual differential tests; CPU-local synthetic benchmarks.
 
-[**Code**](https://github.com/Wendy-James/wendy-foundation-model) · [**Benchmark report**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md) · [**Measurements (CSV)**](https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv) · [**Reproduction steps**](https://github.com/Wendy-James/wendy-foundation-model#reproduce-the-tokenizer-milestone)
+| Benchmark corpus | Indexed vs. naive trainer |
+| :--- | ---: |
+| English | **7.25×** |
+| Code | **4.55×** |
+| Mixed multilingual | **4.57×** |
+| Chinese | **0.70× — slower** |
 
-**Next (not yet completed):** [Decoder-only Transformer engineering draft — PR #24](https://github.com/Wendy-James/wendy-foundation-model/pull/24) has passed isolated toy CPU smoke tests and awaits owner review, environment reproducibility checks, and real training/evaluation. GPU/attention profiling and scaling remain planned.
+The indexed trainer matched tokenizer specifications in the tested cases but used more tracked Python allocations. Results are **small synthetic CPU benchmarks**, not model pretraining or production throughput.
 
-### 02 / Post-training × Agentic RL Research
+[Technical report](https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md) · [Measurements](https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv) · [Reproduction instructions](https://github.com/Wendy-James/wendy-foundation-model#reproduce-the-tokenizer-milestone)
 
-Current investigations cover **verifier reliability, data selection, mathematical reasoning evaluation, and SFT-to-RL experimental design**. Longer-term questions include tool-use rewards, multi-step environments, and agentic RL. These are research directions, **not claims of completed agent training, validated RL gains, or publication**.
+**Work in progress:** [Decoder-only Transformer M2 draft, PR #24](https://github.com/Wendy-James/wendy-foundation-model/pull/24). Isolated toy CPU smoke tests were reported in the draft; the PR is **not merged**, and real pretraining, independent review, and GPU profiling are not claimed.
 
-Research code stays private until validation and release review. This section will be updated only when safe, reproducible findings are ready.
+### 02 / [Recommendation retrieval & evaluation](https://github.com/Wendy-James/short-video-recsys-reproduce)
 
-### 03 / [Recommendation Retrieval & Evaluation](https://github.com/Wendy-James/short-video-recsys-reproduce)
+A publicly inspectable **offline reproduction**, covering Two-Tower/DSSM retrieval, negative sampling, temporal holdouts, TopK metrics, ablations, and leakage checks.
 
-A public **offline reproduction** of a Two-Tower/DSSM short-video recall pipeline, with temporal splits, negative sampling, Faiss-style TopK retrieval, ablations, leakage checks, and failure analysis.
+On the repository's **pseudo/anonymized offline dataset**, reported time-split Recall@50 moves from **0.112 to 0.126** across the documented configurations. This is **not** an online experiment or evidence of an employer's business improvement.
 
-Other public evidence: [multimodal retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) · [RAG retrieval evaluation](https://github.com/Wendy-James/llm-rag-system) · [Transformer model lab](https://github.com/Wendy-James/transformer-model-lab).
+[Experiment evidence](https://github.com/Wendy-James/short-video-recsys-reproduce/tree/main/evidence_pack) · [Ablations](https://github.com/Wendy-James/short-video-recsys-reproduce/blob/main/experiments/ablation.csv)
 
-## Research practice
+### 03 / Related systems and evaluation
 
-**Question → baseline → implementation → tests → measured comparison → limitations.**
+[Multimodal retrieval](https://github.com/Wendy-James/ecommerce-multimodal-retrieval) · [RAG retrieval evaluation](https://github.com/Wendy-James/llm-rag-system) · [Transformer experiments](https://github.com/Wendy-James/transformer-model-lab)
 
-I prefer mature, properly credited open-source foundations over unnecessary reinvention. I care about correctness, negative results, clear reproduction commands, and practical engineering constraints — not the number of green squares on a contribution chart.
+These supporting repositories show **offline experiments or reproductions**; they are not presented as proprietary deployments or original contributions to upstream systems.
 
-Industry experience informs my engineering approach, but **employer-owned data, internal model artifacts, implementation details, and private metrics are not portfolio content**. Public sample-based experiments are not presented as online business outcomes.
+## How I work
+
+**Question → baseline → implementation → tests → controlled comparison → failure analysis → reproducible evidence.**
+
+- **Evidence over labels.** Separate completed milestones, experimental drafts, private research, and future plans.
+- **Verifier and evaluation rigor.** Check disagreement, reward failure modes, split integrity, and uncertainty before interpreting results.
+- **Reuse before reinvention.** Build on mature, properly credited open-source tools where that improves validity and speed.
+- **Clear publication boundaries.** No employer-owned code, private data, internal metrics, credentials, unpublished manuscripts, or identifying personal details.
 
 ---
 
-[Responsible publication policy](PUBLICATION_POLICY.md) · **Public projects, evidence, and reproduction instructions are linked above.**
+[Publication policy](PUBLICATION_POLICY.md) · [Portfolio maintenance standards](PORTFOLIO_MAINTENANCE.md) · [Research portfolio](https://wendy-james.github.io/)
+
+<sub>Public evidence reviewed: 2026-10-22. A project roadmap is not a statement of completed work.</sub>
